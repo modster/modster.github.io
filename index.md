@@ -2,7 +2,9 @@
 layout: default
 ---
 
-### Here is an unordered list:
+# Calgary Web Design
+
+## Here is an unordered list:
 
 *   Git 
 *   Netlify
