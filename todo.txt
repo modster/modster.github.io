@@ -1,0 +1,2 @@
+favicon.ico
+custom domain
