@@ -3,9 +3,11 @@ layout: default
 ---
 
 # Eric Michael Greeff
+Calgary Alberta | :octocat: [Github](https://github.com/modster)
+
 Github Contributions Graph:
 ![E.M. Greeff's Github Contributions](https://ghchart.rshah.org/modster)
-
+* * *
 ## S K I L L S
 I am more comfortable using skills that are listed first in the heirarchal structure:
 * * *
@@ -189,15 +191,15 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 ### ALGORITHMIC TRADING
 *   TradingView
     *   Webhooks
-    *   Pine Script
-*   Backtrader (BT)    
+    *   Pinescript
+*   Backtrader (BT)
 
 * * *
 ### LANGUAGES
 *   Javascript
 *   Python
-    *Conda
-    *Anaconda
+    * Conda
+    * Anaconda
 *   PHP
 *   Pinescript
 *   Java
