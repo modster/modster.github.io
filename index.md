@@ -2,14 +2,72 @@
 layout: default
 ---
 
-# Freelance Web/App Design for Business
-## Eric Michael Greeff
-### Calgary Alberta, 403-991-9098
-
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+# Eric Michael Greeff
+Github Contributions Graph:
 ![E.M. Greeff's Github Contributions](https://ghchart.rshah.org/modster)
-### OS
+
+## S K I L L S
+* * *
+### W E B
+*   HTML
+    *   DOM
+    *   HTTP
+    *   SVG
+    *   XML
+    *   Websockets
+    *   REST
+  *   DNS
+      *   HTTPS
+      *   Email (MX)
+      *   Top Level Domain (TLD)
+          *   Sub Domains
+      *   Redirects
+      *   Domain Parking
+*   CSS
+    *   Sass
+    *   Tailwind
+*   Javascript
+    *   Vanilla (client side)
+    *   NodeJS (server)
+        *   Express
+        *   Electron
+        *   Node Package Manager (NPM)
+        *   Node Version Manager (NVM)
+    *   Frameworks
+        *   Vue
+        *   React
+        *   Angular
+
+* * *
+### Search Engine Optimization
+*   Google
+    *   Search Console
+    *   Adsense
+    *   Adwords
+*   Taxonomy
+    *   Longtail Keywords
+*   Sitemap
+*   Tags
+*   File Structure
+*   Landing Pages
+*   Content Distribution Networks (CDN)
+*   Schema.org
+
+* * *
+### Browser
+*   Firefox Developers Edition
+*   Chromme
+* * *
+
+### Blockchain
+*   Bitcoin
+    *   Mining
+    *   Trading
+*   Ethereum
+    *   Programming
+
+* * *
+### Operating Systems
 *   Linux
     *   Ubuntu
     *   Manjaro
@@ -20,37 +78,41 @@ layout: default
 *   Mac
     *   Bash
     *   Xcode
-
 *   Windows
     *   MSDOS
     *   Windows 10
     *   Windows Subsystem For Linux (WSL)
     *   Internet Iinformation Service (IIS)
 
+* * *
 ### Shell
 *   Bash
     *   Fish
 *   CMD
 *   Powershell
 
+* * *
 ### Versioning
 *   Git
 *   Github
     *   Github Pages
     *   Github API
 
+* * *
 ### Deployment
 *   Netlify
 *   Heroku
 *   Cordova
 *   Monaca
 
+* * *
 ### Database
 *   MySQL
 *   Nedb
 *   Firebase
 *   GraphQL
 
+* * *
 ### IDE
 *   Visual Studio Code
 *   Sublime Text
@@ -59,6 +121,7 @@ layout: default
 *   Xcode
 *   Visual Studio
 
+* * *
 ### App Development
 *   Android
     *   Cordova
@@ -69,6 +132,7 @@ layout: default
 *   Windows
     *   Electron
 
+* * *
 ### Google API
 *   Android
     *   Apps
@@ -86,17 +150,20 @@ layout: default
 *   Docs
 *   Youtube
 
+* * *
 ### Frameworks
 *   NodeJS
 *   Vue
 *   Cordova
 *   Ionic
 
+* * *
 ### Static Site Generator
 *   Github Pages
 *   Jekyll
 *   Gridsome
 
+* * *
 ### Server Rendered Site
 *   WordPress
     *   PHP
@@ -106,12 +173,14 @@ layout: default
     *   RSS
     *   Auto Publish
 
+* * *
 ### Server
 *   NodeJS
   *   Express
 *   Apache
 *   NGINX
 
+* * *
 ### Containerization
 *   Docker
 *   Docker Hub
@@ -119,67 +188,7 @@ layout: default
 *   Virtualbox
 *   Vmware
 
-### Web
-*   HTML
-    *   DOM
-        *   HTTP
-        *   SVG
-        *   XML
-    *   Websockets
-    *   REST
-    *   DNS
-        *   HTTPS
-        *   Email (MX)
-        *   Top Level Domain (TLD)
-            *   Sub Domains
-        *   Redirects
-        *   Domain Parking
-*   CSS
-    *   Sass
-    *   Tailwind
-*   Javascript
-    *   NodeJS
-        *   Express
-        *   Electron
-        *   Node Package Manager (NPM)
-        *   Node Version Manager (NVM)
-    *   Vanilla
-    *   Frameworks
-        *   Vue
-        *   React
-        *   Angular
-
-### SEO
-*   Google
-    *   Search Console
-    *   Adsense
-    *   Adwords
-*   Taxonomy
-    *   Longtail Keywords
-*   Sitemap
-*   Tags
-*   File Structure
-*   Landing Pages
-*   Content Distribution Networks (CDN)
-*   Schema.org
-
-### Browser
-*   Firefox Developers Edition
-*   Chromme
-
-### Blockchain
-*   Bitcoin
-    *   Mining
-    *   Trading
-*   Ethereum
-    *   Programming
-
-*   NodeJS
-*   Pine Script
-
-*   Auto Hotkeys
-*   Less
-
+* * *
 ### Social Media
 *   Wordpress
 *   Twitter API
@@ -241,8 +250,12 @@ layout: default
 *   C#
 *   Basic
 
-ToDO:
-ATOm
+ToDo:
+Tailwind
+Atom
 RegX
 Twitch
 YouTube
+Pine Script
+Auto Hotkeys
+Less
