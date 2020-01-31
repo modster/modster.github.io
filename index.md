@@ -8,7 +8,7 @@ layout: default
 
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
+![E.M. Greeff's Github Contributions](https://ghchart.rshah.org/modster)
 ### OS
 *   Linux
     *   Ubuntu

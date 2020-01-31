@@ -4,3 +4,6 @@ crypto-retail
 online store that accepts crypto
 online store that accepts bitcoin
 embed <img src="http://ghchart.rshah.org/modster" alt="2016rshah's Github chart" />
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![E.M. Greeff's Github Contributions](https://ghchart.rshah.org/modster)

@@ -4,3 +4,5 @@ Gemfile.lock
 *.gem
 README.md
 .jekyll-cache
+todo.txt
+index.bkp
