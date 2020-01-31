@@ -7,23 +7,12 @@ Github Contributions Graph:
 ![E.M. Greeff's Github Contributions](https://ghchart.rshah.org/modster)
 
 ## S K I L L S
+I am more comfortable using skills that are listed first in the heirarchal structure:
 * * *
-### W E B
-*   HTML
-    *   DOM
-    *   HTTP
-    *   SVG
-    *   XML
+### WEB DESIGN
+*   Hyper Text Markup Language
     *   Websockets
-    *   REST
-  *   DNS
-      *   HTTPS
-      *   Email (MX)
-      *   Top Level Domain (TLD)
-          *   Sub Domains
-      *   Redirects
-      *   Domain Parking
-*   CSS
+*   Cascading Style Sheets
     *   Sass
     *   Tailwind
 *   Javascript
@@ -36,12 +25,58 @@ Github Contributions Graph:
     *   Frameworks
         *   Vue
         *   React
-        *   Angular
+        *   Angular    
+*   RESTful APIs
+*   Markdown
+*   Document Object Model (DOM)
+    *   HTML
+    *   SVG
+    *   XML
+*   Domain Name System (DNS)
+      *   HTTPS
+      *   Email (MX)
+      *   Top Level Domain (TLD)
+          *   Registration
+          *   Sub Domains
+      *   Migration
+      *   Redirects
+      *   Domain Parking
 
 * * *
-### Search Engine Optimization
+### VERSIONING / COLABORATION
+*   Git
+*   Github
+    *   Github Pages
+    *   Github API
+
+* * *
+### DEPLOYMENT
+*   Netlify
+*   Heroku
+*   Cordova
+*   Monaca
+
+* * *
+### DATABSES
+*   MySQL
+*   Nedb
+*   Firebase
+*   GraphQL
+
+* * *
+### INTEGRATED DEVELOPMENT ENVIRONMENTS
+*   Visual Studio Code
+*   Sublime Text
+*   Android Studio
+*   Unity3d
+*   Xcode
+*   Visual Studio
+
+* * *
+### SEARCH ENGINE OPTIMIZATION
 *   Google
     *   Search Console
+    *   Tracking
     *   Adsense
     *   Adwords
 *   Taxonomy
@@ -54,12 +89,12 @@ Github Contributions Graph:
 *   Schema.org
 
 * * *
-### Browser
+### BROWSERS
 *   Firefox Developers Edition
-*   Chromme
+*   Chrome
 * * *
 
-### Blockchain
+### BLOCKCHAIN
 *   Bitcoin
     *   Mining
     *   Trading
@@ -67,7 +102,12 @@ Github Contributions Graph:
     *   Programming
 
 * * *
-### Operating Systems
+### OPERATING SYSTEMS
+*   Windows
+    *   Windows 10
+    *   Windows Subsystem For Linux (WSL)
+    *   Internet Iinformation Service (IIS)
+    *   MiscroSoft Disk Operating System (MSDOS)
 *   Linux
     *   Ubuntu
     *   Manjaro
@@ -76,53 +116,33 @@ Github Contributions Graph:
     *   Busybox
     *   GRand Unified Bootloader (GRUB)
 *   Mac
-    *   Bash
     *   Xcode
-*   Windows
-    *   MSDOS
-    *   Windows 10
-    *   Windows Subsystem For Linux (WSL)
-    *   Internet Iinformation Service (IIS)
 
 * * *
-### Shell
+### SHELLS
 *   Bash
     *   Fish
 *   CMD
 *   Powershell
+* * *
+
+### STATIC SITE GENERATORS
+*   Github Pages
+*   Jekyll
+*   Gridsome
 
 * * *
-### Versioning
-*   Git
-*   Github
-    *   Github Pages
-    *   Github API
+### SERVER RENDERED SITES
+*   WordPress
+    *   PHP
+    *   Theme
+    *   MySQL
+    *   Online Store
+    *   RSS
+    *   Auto Publish
 
 * * *
-### Deployment
-*   Netlify
-*   Heroku
-*   Cordova
-*   Monaca
-
-* * *
-### Database
-*   MySQL
-*   Nedb
-*   Firebase
-*   GraphQL
-
-* * *
-### IDE
-*   Visual Studio Code
-*   Sublime Text
-*   Android Studio
-*   Unity3d
-*   Xcode
-*   Visual Studio
-
-* * *
-### App Development
+### APP DEVELOPMENT
 *   Android
     *   Cordova
     *   Google Play Store
@@ -133,7 +153,7 @@ Github Contributions Graph:
     *   Electron
 
 * * *
-### Google API
+### GOOGLE API
 *   Android
     *   Apps
     *   Play Store
@@ -149,93 +169,31 @@ Github Contributions Graph:
 *   Drive
 *   Docs
 *   Youtube
-
 * * *
-### Frameworks
-*   NodeJS
-*   Vue
-*   Cordova
-*   Ionic
-
-* * *
-### Static Site Generator
-*   Github Pages
-*   Jekyll
-*   Gridsome
-
-* * *
-### Server Rendered Site
-*   WordPress
-    *   PHP
-    *   Theme
-    *   MySQL
-    *   Online Store
-    *   RSS
-    *   Auto Publish
-
-* * *
-### Server
-*   NodeJS
-  *   Express
-*   Apache
-*   NGINX
-
-* * *
-### Containerization
-*   Docker
-*   Docker Hub
-*   Windows Subsystem for Linux (WSL)
-*   Virtualbox
-*   Vmware
-
-* * *
-### Social Media
-*   Wordpress
-*   Twitter API
-*   Reddit API
-*   IFTTT
-
-### APIs
-*   Websocket
-*   REST
-*   Postman
-*   Server
-    *   Routing
-    *   API
-
-### Graphic Design
-*   Photoshop
-*   Piskel
-*   Inkscape
-
-### 3D
-*   AutoCAD
-    *   Sapphire Suite
-*   Unity3d
-*   Roblox Designer
-*   3DS Max
-*   Blender
-
-### Remoting
+### REMOTE
 *   SSH
 *   SFTP
 *   Client
 *   Server
 
-### Encryption
-*   SSL
-*   Linux
-*   Unix
+* * *
+### ENCRYPTION
 *   Windows
 *   Putty
 *   Kleopatra
+*   Secure Socket Layer
+*   Linux
+*   Unix
 
-### Algorithmic trading
+* * *
+### ALGORITHMIC TRADING
 *   TradingView
     *   Webhooks
     *   Pine Script
+*   Backtrader (BT)    
 
-### Languages
+* * *
+### LANGUAGES
 *   Javascript
 *   Python
     *Conda
@@ -249,13 +207,46 @@ Github Contributions Graph:
 *   Autohotkeys
 *   C#
 *   Basic
+* * *
+### Social Media
+*   Wordpress API
+*   Twitter API
+*   Reddit API
+*   IFTTT
+* * *
+### SERVERS
+*   NodeJS
+  *   Express
+*   Apache
+*   NGINX
 
-ToDo:
-Tailwind
-Atom
-RegX
-Twitch
-YouTube
-Pine Script
-Auto Hotkeys
-Less
+* * *
+### Containerization
+*   Docker
+*   Docker Hub
+*   Windows Subsystem for Linux (WSL)
+*   Virtualbox
+*   Vmware
+* * *
+### APIs
+*   Websocket
+*   REST
+*   Postman
+*   Server
+    *   Routing
+    *   API
+* * *
+### Graphic Design
+*   Photoshop
+*   Piskel
+*   Inkscape
+* * *
+### 3D
+*   AutoCAD
+    *   Sapphire Suite
+*   Unity3d
+*   Roblox Designer
+*   3DS Max
+*   Blender
+* * *
+And more...
