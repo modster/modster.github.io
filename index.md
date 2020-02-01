@@ -53,6 +53,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 
 * * *
 ### DEPLOYMENT
+*   Google Cloud Platform
 *   Netlify
 *   Heroku
 *   Cordova
@@ -159,6 +160,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Android
     *   Apps
     *   Play Store
+    *   Google Cloud Platform
     *   Search
         *   Google Tracking ID
         *   Adwords
