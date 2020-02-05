@@ -3,14 +3,18 @@ layout: default
 ---
 
 # Eric Michael Greeff
-Calgary Alberta | :octocat: [Github](https://github.com/modster)
+Calgary Alberta | [Github](https://github.com/modster)
 
 Github Contributions Graph:
 ![E.M. Greeff's Github Contributions](https://ghchart.rshah.org/modster)
+
 * * *
+
 ## S K I L L S
 I am more comfortable using skills that are listed first in the heirarchal structure:
+
 * * *
+
 ### WEB DESIGN
 *   Hyper Text Markup Language
     *   Websockets
@@ -45,6 +49,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
       *   Domain Parking
 
 * * *
+
 ### VERSIONING / COLABORATION
 *   Git
 *   Github
@@ -52,6 +57,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
     *   Github API
 
 * * *
+
 ### DEPLOYMENT
 *   Netlify
 *   Heroku
@@ -59,6 +65,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Monaca
 
 * * *
+
 ### DATABSES
 *   MySQL
 *   Nedb
@@ -66,6 +73,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   GraphQL
 
 * * *
+
 ### INTEGRATED DEVELOPMENT ENVIRONMENTS
 *   Visual Studio Code
 *   Sublime Text
@@ -75,6 +83,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Visual Studio
 
 * * *
+
 ### SEARCH ENGINE OPTIMIZATION
 *   Google
     *   Search Console
@@ -91,9 +100,11 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Schema.org
 
 * * *
+
 ### BROWSERS
 *   Firefox Developers Edition
 *   Chrome
+
 * * *
 
 ### BLOCKCHAIN
@@ -104,6 +115,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
     *   Programming
 
 * * *
+
 ### OPERATING SYSTEMS
 *   Windows
     *   Windows 10
@@ -121,11 +133,13 @@ I am more comfortable using skills that are listed first in the heirarchal struc
     *   Xcode
 
 * * *
+
 ### SHELLS
 *   Bash
     *   Fish
 *   CMD
 *   Powershell
+
 * * *
 
 ### STATIC SITE GENERATORS
@@ -134,6 +148,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Gridsome
 
 * * *
+
 ### SERVER RENDERED SITES
 *   WordPress
     *   PHP
@@ -144,6 +159,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
     *   Auto Publish
 
 * * *
+
 ### APP DEVELOPMENT
 *   Android
     *   Cordova
@@ -155,6 +171,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
     *   Electron
 
 * * *
+
 ### GOOGLE API
 *   Android
     *   Apps
@@ -171,7 +188,9 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Drive
 *   Docs
 *   Youtube
+
 * * *
+
 ### REMOTE
 *   SSH
 *   SFTP
@@ -179,6 +198,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Server
 
 * * *
+
 ### ENCRYPTION
 *   Windows
 *   Putty
@@ -188,6 +208,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Unix
 
 * * *
+
 ### ALGORITHMIC TRADING
 *   TradingView
     *   Webhooks
@@ -195,6 +216,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Backtrader (BT)
 
 * * *
+
 ### LANGUAGES
 *   Javascript
 *   Python
@@ -209,13 +231,17 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Autohotkeys
 *   C#
 *   Basic
+
 * * *
+
 ### Social Media
 *   Wordpress API
 *   Twitter API
 *   Reddit API
 *   IFTTT
+
 * * *
+
 ### SERVERS
 *   NodeJS
   *   Express
@@ -223,13 +249,16 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   NGINX
 
 * * *
+
 ### Containerization
 *   Docker
 *   Docker Hub
 *   Windows Subsystem for Linux (WSL)
 *   Virtualbox
 *   Vmware
+
 * * *
+
 ### APIs
 *   Websocket
 *   REST
@@ -237,12 +266,16 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Server
     *   Routing
     *   API
+
 * * *
+
 ### Graphic Design
 *   Photoshop
 *   Piskel
 *   Inkscape
+
 * * *
+
 ### 3D
 *   AutoCAD
     *   Sapphire Suite
@@ -250,5 +283,7 @@ I am more comfortable using skills that are listed first in the heirarchal struc
 *   Roblox Designer
 *   3DS Max
 *   Blender
+
 * * *
+
 And more...
