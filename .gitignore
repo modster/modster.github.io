@@ -1,4 +1,5 @@
 _site
+site.code-workspace
 .sass-cache
 Gemfile.lock
 *.gem
