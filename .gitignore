@@ -1,9 +1,1 @@
-_site
 site.code-workspace
-.sass-cache
-Gemfile.lock
-*.gem
-README.md
-.jekyll-cache
-todo.txt
-cheet-sheet.md
