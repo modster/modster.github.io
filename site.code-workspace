@@ -5,5 +5,10 @@
 		}
 	],
 	"settings": {
+		"editor.formatOnSave": true,
+		"files.autoSave": "onFocusChange",
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+		"files.trimFinalNewlines": true
 	}
 }
