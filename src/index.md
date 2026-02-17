@@ -2,9 +2,26 @@
 toc: false
 ---
 
+```js
+
+const user = FileAttachment("/data/user.json").json()
+const userJsonUrl = FileAttachment("/data/user.json").href
+
+```
 <div class="hero">
   <h1>@modster</h1>
   <h2>Welcome to your new app! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2>
+</div>
+<div class="card">
+  <h3>Here’s some data about you:</h3>
+
+${display(user.login)}
+
+  <h3>And here’s a link to the volcano dataset:</h3>
+
+  <pre><code>${userJsonUrl}</code></pre>
+
+</div>
   <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
 </div>
 

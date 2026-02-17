@@ -2,9 +2,9 @@ name: Deploy
 
 on:
   # Run this workflow whenever a new commit is pushed to main.
-  push: {branches: [main]}
+  push: { branches: [main] }
   # Run this workflow once per day, at 10:15 UTC
-  schedule: [{cron: "15 10 * * *"}]
+  # schedule: [{ cron: "15 10 * * *" }]
   # Run this workflow when triggered manually in GitHub’s UI.
   workflow_dispatch: {}
 
@@ -25,6 +25,13 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - id: date
+        run: echo "date=$(TZ=America/Los_Angeles date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+      - id: cache-data
+        uses: actions/cache@v4
+        with:
+          path: src/.observablehq/cache
+          key: data-${{ hashFiles('src/data/*') }}-${{ steps.date.outputs.date }}
       - run: npm run build
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
