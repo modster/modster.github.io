@@ -3,11 +3,8 @@ title: Privacy Policy
 ---
 
 ```js
-
-import * as dotenv from "dotenv"
-// import dotenv.config()
-// import {PRIVACY_EMAIL} from "/components/legal-env.js";
-
+// import dotenv from "dotenv";
+// dotenv.config();
 ```
 
 # Privacy Policy

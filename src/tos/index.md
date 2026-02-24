@@ -6,17 +6,6 @@ sidebar: true
 
 ---
 
-```js
-import {
-	SUPPORT_EMAIL,
-	BUSINESS_ADDRESS,
-	BUSINESS_CITY,
-	BUSINESS_NAME,
-	BUSINESS_COUNTRY
-} from "/components/legal-env.js";
-
-```
-
 # Terms of Service
 
 Last updated: February 23, 2026
