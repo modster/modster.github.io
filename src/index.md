@@ -1,6 +1,8 @@
 ---
-theme: dark
-title: GitHub user dashboard
+theme: dashboard
+title: User Profile
+keywords: [github, user, profile, dashboard]
+
 toc: false
 ---
 
@@ -14,11 +16,7 @@ const now = new Date();
 const accountAgeDays = Math.floor((now - joinedAt) / (1000 * 60 * 60 * 24));
 const accountAgeYears = Math.floor(accountAgeDays / 365.25);
 
-const blogUrl = user.blog
-  ? user.blog.startsWith("http")
-    ? user.blog
-    : `https://${user.blog}`
-  : null;
+const blogUrl = `https://${user.blog}`;
 
 const followerRatio = user.following
   ? (user.followers / user.following).toFixed(2)
@@ -35,7 +33,7 @@ const updatedLabel = updatedAt.toLocaleDateString("en-CA", {
   <div class="hero-card">
     <div class="hero-meta">
       <div class="avatar-wrap">
-        <img src="${user.avatar_url}" alt="${user.login} avatar" />
+        ${html`<img src="${user.avatar_url}" alt="${user.login} avatar" />`}
       </div>
       <div>
         <p class="kicker">GitHub profile</p>
@@ -45,10 +43,10 @@ const updatedLabel = updatedAt.toLocaleDateString("en-CA", {
       </div>
     </div>
     <div class="hero-links">
-      <a class="pill" href="${user.html_url}">Profile</a>
-      ${blogUrl ? `<a class="pill" href="${blogUrl}">Website</a>` : ""}
-      ${user.twitter_username ? `<a class="pill" href="https://twitter.com/${user.twitter_username}">Twitter</a>` : ""}
-      ${user.email ? `<a class="pill" href="mailto:${user.email}">Email</a>` : ""}
+      ${html`<a class="pill" href="${user.html_url}">Profile</a>`}
+      ${html`<a class="pill" href="${blogUrl}">Website</a>`}
+      ${html`<a class="pill" href="https://x.com/${user.twitter_username}">X</a>`}
+      ${html`<a class="pill" href="mailto:${user.email}">Email</a>`}
     </div>
   </div>
 </section>
@@ -118,7 +116,7 @@ const updatedLabel = updatedAt.toLocaleDateString("en-CA", {
       <strong>${followerRatio}</strong>
     </div>
     <p class="hint">Based on ${user.followers.toLocaleString("en-US")} followers and ${user.following.toLocaleString("en-US")} following.</p>
-    <a class="link" href="${user.followers_url}">View followers</a>
+    ${html`<a class="link" href="${user.followers_url}">View followers</a>`}
   </div>
 </section>
 
@@ -129,7 +127,7 @@ const updatedLabel = updatedAt.toLocaleDateString("en-CA", {
   </div>
   <div class="code-pill">
     <span>File</span>
-    <a href="${userJsonUrl}">/data/user.json</a>
+    ${html`<a href="${userJsonUrl}">/data/user.json</a>`}
   </div>
 </section>
 

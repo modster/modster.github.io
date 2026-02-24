@@ -1,26 +1,14 @@
 ---
-theme: dark
+theme: default
 title: Repositories
 toc: false
 ---
 
 ```js
-import {repoNodes} from "./data/repoNodes.js";
-
-const repos = repoNodes.map((full) => {
-  const [owner, name] = full.split("/");
-  return {
-    owner,
-    name,
-    full,
-    url: `https://github.com/${full}`
-  };
-});
-
-const totalRepos = repos.length;
-const uniqueOwners = new Set(repos.map((repo) => repo.owner)).size;
-const sortedRepos = [...repos].sort((a, b) => a.name.localeCompare(b.name));
-const preview = sortedRepos.slice(0, 120);
+const repos = FileAttachment("/data/repos.csv").csv()
+Inputs.table(repos, {
+  columns: ["name", "description", "visibility", "last update"]
+})
 ```
 
 # Repository overview

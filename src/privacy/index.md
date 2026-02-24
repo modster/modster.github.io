@@ -3,7 +3,10 @@ title: Privacy Policy
 ---
 
 ```js
-const PRIVACY_EMAIL = "privacy@greeffer.com";
+
+import * as dotenv from "dotenv"
+// import dotenv.config()
+// import {PRIVACY_EMAIL} from "/components/legal-env.js";
 
 ```
 
@@ -42,4 +45,4 @@ Depending on your location, you may have certain rights regarding your personal 
 ## 6. Changes to This Privacy Policy
 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
 ## 7. Contact Us
-If you have any questions about this Privacy Policy, please contact us at **${PRIVACY_EMAIL}**.
+If you have any questions about this Privacy Policy, please contact us at ${process.env.PRIVACY_EMAIL}.

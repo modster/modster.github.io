@@ -1,13 +1,20 @@
 ---
 title: Terms of Service
+keywords: [terms of service, tos, legal]
+toc: true
+sidebar: true
+
 ---
 
 ```js
-const SUPPORT_EMAIL = "support@greeffer.com";
-const BUSINESS_ADDRESS = "Petrolia Ontario, Canada";
-const BUSINESS_CITY = "Sarnia";
-const BUSINESS_NAME = "Greeffer.com";
-const BUSINESS_COUNTRY = "Canada";
+import {
+	SUPPORT_EMAIL,
+	BUSINESS_ADDRESS,
+	BUSINESS_CITY,
+	BUSINESS_NAME,
+	BUSINESS_COUNTRY
+} from "/components/legal-env.js";
+
 ```
 
 # Terms of Service
@@ -20,8 +27,8 @@ These Terms of Service ("Terms") govern your access to and use of this website a
 
 This Service is operated by **${BUSINESS_NAME}** ("we," "us," or "our").
 
-- Contact email: **${SUPPORT_EMAIL}**
-- Business address: **${BUSINESS_ADDRESS}**
+- Contact email: **`${SUPPORT_EMAIL}`**
+- Business address: **`${BUSINESS_ADDRESS}`**
 
 ## 2. Eligibility and Account Access
 
