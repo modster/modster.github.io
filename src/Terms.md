@@ -16,8 +16,8 @@ These Terms of Service ("Terms") govern your access to and use of this website a
 
 This Service is operated by **${BUSINESS_NAME}** ("we," "us," or "our").
 
-- Contact email: **`${SUPPORT_EMAIL}`**
-- Business address: **`${BUSINESS_ADDRESS}`**
+- Contact email: **${SUPPORT_EMAIL}**
+- Business address: **${BUSINESS_ADDRESS}**
 
 ## 2. Eligibility and Account Access
 

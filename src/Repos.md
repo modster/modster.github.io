@@ -1,19 +1,62 @@
 ---
-theme: default
+theme: dashboard
 title: Repositories
 toc: false
+
 ---
 
 ```js
 const repos = FileAttachment("/data/repos.csv").csv()
-Inputs.table(repos, {
-  columns: ["name", "description", "visibility", "last update"]
-})
-```
 
-# Repository overview
+```
+# Repositories
+
+```js
+const totalRepos = repos.length;
+const table = Inputs.table(repos, {
+  Repository: "text",
+  Description: "text",
+  Visibility: "text",
+  LastUpdate: "text"
+})
+  // columns: [
+  //   "species",
+  //   "culmen_length_mm",
+  //   "culmen_depth_mm",
+  //   "flipper_length_mm"
+  // ],
+//   header: {
+//     species: "Penguin Species",
+//     culmen_length_mm: "Culmen length (mm)",
+//     flipper_length_mm: "Flipper length (mm)",
+//     culmen_depth_mm: "Culmen Depth (mm)"
+//   }
+// })
+
+  // repos.map((repo) => ({
+  //   Name: repo.name,
+  //   Description: repo.description,
+  //   Visibility: repo.visibility,
+  //   LastUpdate: repo.last_update,
+  // })),
+  // {
+  //   Name: "text",
+  //   Description: "text",
+  //   Visibility: "text",
+  //   LastUpdate: "text"
+  // }
+// )
+```
+${table}
+
+<!-- 
 
 <section class="grid grid-cols-3 stats">
+  <div class="card">
+
+  ${table}
+
+  </div>
   <div class="card">
     <p class="label">Total repositories</p>
     <p class="metric">${totalRepos.toLocaleString("en-US")}</p>
@@ -57,7 +100,7 @@ ${Inputs.table(
     <span>File</span>
     <a href="/data/repoNodes.js">/data/repoNodes.js</a>
   </div>
-</section>
+</section> -->
 
 <style>
 .stats {

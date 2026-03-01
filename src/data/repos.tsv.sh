@@ -2,4 +2,6 @@
 
 # https://api.github.com/users/modster/repos
 
-gh repo list
+gh repo list \
+    --json name \
+    --jq '.[].name' > repos.tsv
