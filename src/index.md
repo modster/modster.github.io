@@ -1,32 +1,31 @@
 ---
 theme: dashboard
-title: User Profile
-keywords: [github, user, profile, dashboard]
-
+title: "User Profile"
+keywords: "github, user, profile, dashboard"
 toc: false
 ---
 
 ```js
-const user = await FileAttachment("/data/user.json").json();
-const userJsonUrl = FileAttachment("/data/user.json").href;
+const user = await FileAttachment("/data/user.json").json()
+const userJsonUrl = FileAttachment("/data/user.json").href
 
-const joinedAt = new Date(user.created_at);
-const updatedAt = new Date(user.updated_at);
-const now = new Date();
-const accountAgeDays = Math.floor((now - joinedAt) / (1000 * 60 * 60 * 24));
-const accountAgeYears = Math.floor(accountAgeDays / 365.25);
+const joinedAt = new Date(user.created_at)
+const updatedAt = new Date(user.updated_at)
+const now = new Date()
+const accountAgeDays = Math.floor((now - joinedAt) / (1000 * 60 * 60 * 24))
+const accountAgeYears = Math.floor(accountAgeDays / 365.25)
 
-const blogUrl = `https://${user.blog}`;
+const blogUrl = `https://${user.blog}`
 
 const followerRatio = user.following
   ? (user.followers / user.following).toFixed(2)
-  : "0.00";
+  : "0.00"
 
 const updatedLabel = updatedAt.toLocaleDateString("en-CA", {
   year: "numeric",
   month: "short",
-  day: "2-digit"
-});
+  day: "2-digit",
+})
 ```
 
 <section class="hero">

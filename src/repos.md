@@ -1,30 +1,31 @@
 ---
 theme: dashboard
-title: Repositories
+title: "Repos"
 toc: false
-
 ---
 
 ```js
-const repos = FileAttachment("/data/repos.csv").csv()
-
+const repos = FileAttachment("/data/repos.tsv").tsv()
 ```
+
 # Repositories
 
 ```js
 const totalRepos = repos.length;
 const table = Inputs.table(repos, {
+  header: {
+    Name: "text",
   Repository: "text",
   Description: "text",
   Visibility: "text",
-  LastUpdate: "text"
-})
-  // columns: [
-  //   "species",
-  //   "culmen_length_mm",
-  //   "culmen_depth_mm",
-  //   "flipper_length_mm"
-  // ],
+  LastUpdate: "text",
+});
+// columns: [
+//   ",
+//   "culmen_length_mm",
+//   "culmen_depth_mm",
+//   "flipper_length_mm"
+// ],
 //   header: {
 //     species: "Penguin Species",
 //     culmen_length_mm: "Culmen length (mm)",
@@ -33,23 +34,17 @@ const table = Inputs.table(repos, {
 //   }
 // })
 
-  // repos.map((repo) => ({
-  //   Name: repo.name,
-  //   Description: repo.description,
-  //   Visibility: repo.visibility,
-  //   LastUpdate: repo.last_update,
-  // })),
-  // {
-  //   Name: "text",
-  //   Description: "text",
-  //   Visibility: "text",
-  //   LastUpdate: "text"
-  // }
-// )
+// columns: repos.map((repo) => ({
+//   Name: repo.name,
+//   Description: repo.description,
+//   Visibility: repo.visibility,
+//   LastUpdate: repo.last_update,
+// })),
 ```
+
 ${table}
 
-<!-- 
+<!--
 
 <section class="grid grid-cols-3 stats">
   <div class="card">
@@ -87,7 +82,7 @@ ${Inputs.table(
     URL: "url"
   }
 )}
-  
+
   </div>
 </section>
 

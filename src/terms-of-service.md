@@ -3,7 +3,6 @@ title: Terms of Service
 keywords: [terms of service, tos, legal]
 toc: true
 sidebar: true
-
 ---
 
 # Terms of Service

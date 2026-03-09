@@ -1,32 +1,4 @@
----
-title: Gists
-theme: dashboard
----
 
-```js
-FileAttachment("/data/gists.tsv").tsv()
-const gists = FileAttachment("/data/gists.tsv").tsv()
-```
-## Gists
-${Inputs.table(gists, {
-  columns: [
-    "id",
-    "description",
-    "files",
-    "visibility",
-    "updated"
-  ],
-  header: {
-    id: "ID",
-    description: "Description",
-    files: "Files",
-    visibility: "Visibility",
-    updated: "Updated"
-    }
-  })
-}
-
-<style>
 .hero {
   margin: 2.5rem 0 2rem;
 }
@@ -215,4 +187,3 @@ dd {
     align-items: flex-start;
   }
 }
-</style>

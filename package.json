@@ -6,19 +6,24 @@
     "build": "observable build",
     "dev": "observable preview",
     "deploy": "observable deploy",
-    "observable": "observable"
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "@observablehq/framework": "^1.13.3",
+    "@octokit/plugin-paginate-graphql": "^6.0.0",
     "d3-dsv": "^3.0.1",
     "d3-time-format": "^4.1.0",
     "dotenv": "^17.3.1",
     "octokit": "^5.0.5"
   },
   "devDependencies": {
+    "oxfmt": "^0.36.0",
+    "prettier": "3.8.1",
     "rimraf": "^5.0.5"
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "pnpm@10.30.3+sha512.c961d1e0a2d8e354ecaa5166b822516668b7f44cb5bd95122d590dd81922f606f5473b6d23ec4a5be05e7fcd18e8488d47d978bbe981872f1145d06e9a740017"
 }

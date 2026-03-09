@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-
 gh api \
   -H "Accept: application/vnd.github+json" \
   -H "X-GitHub-Api-Version: 2022-11-28" \
-  /users/modster/followers \
-    --jq '.[].login' > src/data/followers.json
+  /users/modster/followers > followers.json

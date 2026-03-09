@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
+gh gist list --public --limit 100 
 
-gh gist list 
+

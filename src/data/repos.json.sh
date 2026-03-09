@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+# https://api.github.com/users/modster/repos
+
+gh repo list 
+    # { archivedAt, \
+    #   assignableUsers, \
+    #   codeOfConduct, \
+    #   contactLinks, \
+    #   createdAt, \
+    #   defaultBranchRef, \
+    #   deleteBranchOnMerge, \
+    #   description, \
+    #   diskUsage, \
+    #   forkCount, \
+    #   fundingLinks, \
+    #   hasDiscussionsEnabled, \
+    #   hasIssuesEnabled, \
+    #   hasProjectsEnabled, \
+    #   hasWikiEnabled, \
+    #   homepageUrl, \
+    #   id, \
+    #   isArchived, \
+    #   isBlankIssuesEnabled, \
+    #   isEmpty, \
+    #   isFork, \
+    #   isInOrganization, \
+    #   isMirror, \
+    #   isPrivate, \
+    #   isSecurityPolicyEnabled, \
+    #   isTemplate, \
+    #   isUserConfigurationRepository, \
+    #   issueTemplates, \
+    #   issues, \
+    #   labels, \
+    #   languages, \
+    #   latestRelease, \
+    #   licenseInfo, \
+    #   mentionableUsers, \
+    #   mergeCommitAllowed, \
+    #   milestones, \
+    #   mirrorUrl, \
+    #   name, \
+    #   nameWithOwner, \
+    #   openGraphImageUrl, \
+    #   owner, \
+    #   parent, \
+    #   primaryLanguage, \
+    #   projects, \
+    #   projectsV2, \
+    #   pullRequestTemplates, \
+    #   pullRequests, \
+    #   pushedAt, \
+    #   rebaseMergeAllowed, \
+    #   repositoryTopics, \
+    #   securityPolicyUrl, \
+    #   squashMergeAllowed, \
+    #   sshUrl, \
+    #   stargazerCount, \
+    #   templateRepository, \
+    #   updatedAt, \
+    #   url, \
+    #   usesCustomOpenGraphImage, \
+    #   viewerCanAdminister, \
+    #   viewerDefaultCommitEmail, \
+    #   viewerDefaultMergeMethod, \
+    #   viewerHasStarred, \
+    #   viewerPermission, \
+    #   viewerPossibleCommitEmails, \
+    #   viewerSubscription, \
+    #   visibility, \
+    #   watchers }' \
