@@ -1,4 +1,73 @@
-# @modster
+## @modster
+
+### *whoami*
+Eric M. Greeff
+emg@greeffer.com
++1-226-932-0820
+### *bio* 
+*@mention other users and organizations to link to them.*
+
+**to do**
+<!-- ### *pronouns* -->  
+### **Custom Domain**
+
+#### [greeffer.com](https://greeffer.com)
+
+### *Social accounts*
+
+- x.com/goodgreeff
+- github.com/modster
+- linkedin.com/in/emgreeff
+### *Company*
+*You can **@mention** your company’s GitHub organization to link it.*
+
+[@DataDrivenSoftware](https://datadash.cloud)
+### *Location* 
+
+Petrolia, Ontario
+*Time Zone:* America/Toronto
+
+### *Profile picture*
+
+ ![@modster](https://avatars.githubusercontent.com/u/893946?s=400&u=7d63e8c0263d2f02bc3a74d96536d6b56abc8578&v=4)
+
+### *Pinned Repos*
+
+1. Android Camera
+2. 
+3. GH Profile Template
+4. OpenClaw
+5. WebGL/WebGPU
+6.  PineScript (TradingView's DSL)
+### *Contributions & activity*
+Enabling this will make public your contributions and activity from your GitHub profile and from social features like followers, stars, feeds, leaderboards and releases.
+
+- following: who and why
+- project I'm stargazng
+- followers
+### *Achievements*
+Your contribution graph, achievements, and activity overview will show your private contributions without revealing any repository or organization information. [Read more](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/viewing-contributions-on-your-profile).
+
+- Badges, 
+- Contribution Graph
+- GitHub Developer Program
+
+*[GitHub Docs](https://docs.github.com/get-started/exploring-integrations/about-building-integrations) has guides, API and webhook references, information about creating GitHub Apps and other resources for building applications that integrate with GitHub.*
+
+### *Support Email Address*
+An email address where GitHub users can contact you for support.
+
+- support@datadash.cloud
+
+### *Product or company website*
+The URL for the product, company, or service that integrates with GitHub.
+
+[datadash.cloud](https://datadash.cloud)
+
+### *Jobs profile* 
+Available for hire
+
+## Observable Framework
 
 This is an [Observable Framework](https://observablehq.com/framework/) app. To install the required dependencies, run:
 
