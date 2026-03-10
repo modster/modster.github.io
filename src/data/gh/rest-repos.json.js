@@ -7,7 +7,7 @@ const repositories = []
 
 const iterator = octokit.paginate.iterator(octokit.rest.repos.listForUser, {
   username: owner,
-  per_page: 100,
+  per_page: 10,
 })
 
 for await (const { data } of iterator) {

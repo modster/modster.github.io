@@ -17,10 +17,10 @@ export default {
   // The pages and sections in the sidebar. If you don’t specify this option,
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
-  pages: [
-    {
-      name: "User Profile",
-      pages: [
+  // pages: [
+  //   {
+  //     name: "User Profile",
+  //     pages: [
   //       {name: "User Profile", path: "/"},
   //       {name: "Repositories", path: "/repositories/"},
   // {name: "Activity", path: "/activity"},
