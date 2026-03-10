@@ -1,13 +1,13 @@
-import 'dotenv/config'
-import { Octokit } from 'octokit'
+import "dotenv/config"
+import { Octokit } from "octokit"
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
 
 const repositories = await octokit
-  .request('GET /gists/public', {
+  .request("GET /gists/public", {
     headers: {
-      'X-GitHub-Api-Version': '2022-11-28',
-      accept: 'application/vnd.github+json',
+      "X-GitHub-Api-Version": "2022-11-28",
+      accept: "application/vnd.github+json",
     },
   })
   .then(({ data }) => {

@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 ```js
 const info = FileAttachment(`/data/gh/rest.gists.json`).json()
 

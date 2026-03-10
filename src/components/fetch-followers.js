@@ -1,4 +1,4 @@
-const followersApiUrl = 'https://api.github.com/users/modster/followers'
+const followersApiUrl = "https://api.github.com/users/modster/followers"
 
 async function fetchFollowers() {
   const response = await fetch(followersApiUrl)

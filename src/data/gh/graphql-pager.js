@@ -1,6 +1,6 @@
-import 'dotenv/config'
-import { Octokit } from '@octokit/core'
-import { paginateGraphQL } from '@octokit/plugin-paginate-graphql'
+import "dotenv/config"
+import { Octokit } from "@octokit/core"
+import { paginateGraphQL } from "@octokit/plugin-paginate-graphql"
 
 // npm i @octokit/plugin-paginate-graphql
 

@@ -1,12 +1,12 @@
-import dotenv from 'dotenv'
-import { Octokit } from 'octokit'
+import dotenv from "dotenv"
+import { Octokit } from "octokit"
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
 
 const iterator = octokit.paginate.iterator(octokit.rest.issues.listForRepo, {
-  owner: 'observablehq',
-  repo: 'framework',
-  state: 'open',
+  owner: "observablehq",
+  repo: "framework",
+  state: "open",
   per_page: 100,
 })
 

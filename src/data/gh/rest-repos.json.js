@@ -1,8 +1,8 @@
-import 'dotenv/config'
-import { Octokit } from 'octokit'
+import "dotenv/config"
+import { Octokit } from "octokit"
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
-const owner = 'modster'
+const owner = "modster"
 const repositories = []
 
 const iterator = octokit.paginate.iterator(octokit.rest.repos.listForUser, {

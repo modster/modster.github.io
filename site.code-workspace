@@ -9,7 +9,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
     "[jsonc]": {
-      "editor.defaultFormatter": "oxc.oxc-vscode"
+      "editor.defaultFormatter": "oxc.oxc-vscode",
     },
   },
 }

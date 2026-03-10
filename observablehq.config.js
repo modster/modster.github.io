@@ -1,30 +1,32 @@
 // See https://observablehq.com/framework/config for documentation.
-import 'dotenv/config'
+import "dotenv/config"
 
 const { GITHUB_USER } = process.env
 if (!GITHUB_USER) {
-  console.warn('Warning: GITHUB_USER environment variable is not set. GitHub-related features may not work properly.')
+  console.warn(
+    "Warning: GITHUB_USER environment variable is not set. GitHub-related features may not work properly.",
+  )
 } else {
   console.log(`GITHUB_USER: ${GITHUB_USER} ✔️`)
 }
 
 export default {
   // The app’s title; used in the sidebar and webpage titles.
-  title: '@' + GITHUB_USER,
+  title: "@" + GITHUB_USER,
 
   // The pages and sections in the sidebar. If you don’t specify this option,
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
   pages: [
     {
-      name: 'User Profile',
+      name: "User Profile",
       pages: [
-        { name: 'Repositories', path: '/repositories' },
-        { name: 'Gists', path: '/gists' },
+        { name: "Repositories", path: "/repositories" },
+        { name: "Gists", path: "/gists" },
         // { name: "Activity", path: "/activity" },
         // { name: "Contributions", path: "/contributions" },
-        { name: 'Followers', path: '/followers' },
-        { name: 'Following', path: '/following' },
+        { name: "Followers", path: "/followers" },
+        { name: "Following", path: "/following" },
         // { name: "Organizations", path: "/organizations" },
         // { name: "Events", path: "/events" },
         // { name: "Starred Repositories", path: "/starred-repositories" },
@@ -38,21 +40,21 @@ export default {
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
 
   // The path to the source root.
-  root: 'src',
-  base: '/',
+  root: "src",
+  // base: "/",
   // Some additional configuration options and their defaults:
-  theme: 'dashboard', // try "light", "dark", "slate", etc.
+  theme: "dashboard", // try "light", "dark", "slate", etc.
   // header: "", // what to show in the header (HTML)
   footer:
     "Built with <a href='https://observablehq.com/framework'>Observable Framework</a>. | <a href='/privacy-policy'>Privacy Policy</a> | <a href='/terms-of-service'>Terms of Service</a>", // what to show in the footer (HTML)
   sidebar: true, // whether to show the sidebar
   toc: true, // whether to show the table of contents
   pager: true, // whether to show previous & next links in the footer
-  output: 'dist', // path to the output root for build
+  output: "dist", // path to the output root for build
   search: true, // activate search
   linkify: true, // convert URLs in Markdown to links
   typographer: true, // smart quotes and other typographic improvements
-  style: 'style.css',
+  style: "style.css",
   // preserveExtension: false, // drop .html from URLs
   // preserveIndex: false, // drop /index from URLs
 }

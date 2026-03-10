@@ -1,12 +1,12 @@
 ---
-title: 'Repos'
+title: "Repos"
 toc: false
 ---
 
 # Repositories
 
 ```js
-const repos = FileAttachment('/data/gh-repos.tsv').tsv({ array: true, typed: true })
+const repos = FileAttachment("/data/gh-repos.tsv").tsv({ array: true, typed: true })
 ```
 
 ### search
@@ -15,16 +15,16 @@ const repos = FileAttachment('/data/gh-repos.tsv').tsv({ array: true, typed: tru
 const table = Inputs.table(repos, {
   width,
   header: {
-    0: 'Name',
-    1: 'Description',
-    2: 'Visibility',
-    3: 'LastUpdate',
+    0: "Name",
+    1: "Description",
+    2: "Visibility",
+    3: "LastUpdate",
   },
   select: false,
-  layout: 'fixed',
+  layout: "fixed",
   multiple: false,
   rows: 25,
 })
 ```
 
-${resize(table)}
+${resize((width) => table)}

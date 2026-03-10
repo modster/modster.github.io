@@ -1,5 +1,5 @@
-import 'dotenv/config'
-import { Octokit } from 'octokit'
+import "dotenv/config"
+import { Octokit } from "octokit"
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
 
@@ -8,6 +8,6 @@ const {
   data: { login },
 } = await octokit.rest.users.getAuthenticated()
 
-console.log('Hello, %s', login)
+console.log("Hello, %s", login)
 
 export { login }
