@@ -1,7 +1,6 @@
 import "dotenv/config"
 import { graphql } from "@octokit/graphql"
 
-// const octokit = new Octokit({ auth: process.env.GITHUB_PAT })
 const graphqlWithAuth = graphql.defaults({
   headers: {
     authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
@@ -27,20 +26,14 @@ export async function updateUserStatus({
   expiresAt = null,
 } = {}) {
   const mutation = /* GraphQL */ `
-    mutation UpdateUserStatus(
+    mutation changeUserStatus(
       $emoji: String
       $message: String
-      $organizationId: ID
-      $limitedAvailability: Boolean
-      $expiresAt: DateTime
     ) {
       changeUserStatus(
         input: {
           emoji: $emoji
           message: $message
-          organizationId: $organizationId
-          limitedAvailability: $limitedAvailability
-          expiresAt: $expiresAt
         }
       ) {
         status {

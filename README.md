@@ -1,17 +1,20 @@
 ## @modster
 
+## Content for github profile
+
 ### *whoami*
 Eric M. Greeff
 emg@greeffer.com
 +1-226-932-0820
+
 ### *bio* 
 *@mention other users and organizations to link to them.*
 
 **to do**
-<!-- ### *pronouns* -->  
+
 ### **Custom Domain**
 
-#### [greeffer.com](https://greeffer.com)
+[greeffer.com](https://greeffer.com)
 
 ### *Social accounts*
 
@@ -19,12 +22,12 @@ emg@greeffer.com
 - github.com/modster
 - linkedin.com/in/emgreeff
 ### *Company*
-*You can **@mention** your company’s GitHub organization to link it.*
+*You can **@mention** the company’s GitHub organization to link it.*
 
 [@DataDrivenSoftware](https://datadash.cloud)
 ### *Location* 
 
-Petrolia, Ontario
+Ontario, Canada
 *Time Zone:* America/Toronto
 
 ### *Profile picture*
@@ -34,25 +37,24 @@ Petrolia, Ontario
 ### *Pinned Repos*
 
 1. Android Camera
-2. 
+2. DataViz
 3. GH Profile Template
-4. OpenClaw
+4. AI
 5. WebGL/WebGPU
-6.  PineScript (TradingView's DSL)
+6. PineScript (TradingView's DSL)
+
 ### *Contributions & activity*
 Enabling this will make public your contributions and activity from your GitHub profile and from social features like followers, stars, feeds, leaderboards and releases.
 
 - following: who and why
 - project I'm stargazng
 - followers
-### *Achievements*
-Your contribution graph, achievements, and activity overview will show your private contributions without revealing any repository or organization information. [Read more](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/viewing-contributions-on-your-profile).
 
-- Badges, 
+### *Achievements*
+
+- Badges
 - Contribution Graph
 - GitHub Developer Program
-
-*[GitHub Docs](https://docs.github.com/get-started/exploring-integrations/about-building-integrations) has guides, API and webhook references, information about creating GitHub Apps and other resources for building applications that integrate with GitHub.*
 
 ### *Support Email Address*
 An email address where GitHub users can contact you for support.
@@ -67,7 +69,7 @@ The URL for the product, company, or service that integrates with GitHub.
 ### *Jobs profile* 
 Available for hire
 
-## Observable Framework
+## Stack
 
 This is an [Observable Framework](https://observablehq.com/framework/) app. To install the required dependencies, run:
 
@@ -78,7 +80,7 @@ npm install
 Then, to start the local preview server, run:
 
 ```
-npm run dev
+pnpm run dev
 ```
 
 Then visit <http://localhost:3000> to preview your app.
