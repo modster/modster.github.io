@@ -1,9 +1,9 @@
-import "dotenv/config"
-import { Octokit } from "octokit"
+import 'dotenv/config'
+import { Octokit } from 'octokit'
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
 
-const { data } = await octokit.request("GET /user")
+const { data } = await octokit.request('GET /user')
 
 console.log(data)
 

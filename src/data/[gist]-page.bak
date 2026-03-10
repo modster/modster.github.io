@@ -1,5 +1,5 @@
 ```js
-const info = FileAttachment(`${/data/gh/gists.json}.json`).json()
+const info = FileAttachment(`/data/gh/rest.gists.json`).json()
 
 const {
   html_url,
@@ -26,10 +26,12 @@ const {
   repos_url,
 } = info
 ```
+
 # Gist: ${hmlt`<a href='${`https://github.com/${login}/${id}`}' alt='${description}'>${description}</a>`}
+
 ## ${html`Description: ${description}`}
 
-Created at: ${new Date(created_at).toLocaleString()} (updated ${new Date(updated_at).toLocaleString()})  
+Created at: ${new Date(created_at).toLocaleString()} (updated ${new Date(updated_at).toLocaleString()})
 
 <grid class="grid-cols-2">
   <div>
@@ -56,25 +58,3 @@ ${ files.map(file => html`<div><strong>${file.filename}</strong> (${file.languag
 ${html`<a href='${comments_url}' alt='view comments on github'>View comments on GitHub</a>`}
 
 ${comments.map( comment => html`<div class="card"><strong>${comment.user.login}</strong> commented at ${new Date(comment.created_at).toLocaleString()}: <p class="comment"> ${comment.body} </p></div>`)}
-
-```js
-// "description": "BYD reducer oil wholesaler[www.my81.me] - W7w5",
-// "comments": 0,
-// "user": null,
-// "comments_url": "https://api.github.com/gists/ae00ea7b371230b415867c072aa68f77/comments",
-// "owner": {
-// "login": "chavezdaviddiego29072003-collab",
-// "id": 265666432,
-// "node_id": "U_kgDOD9W_gA",
-// "avatar_url": "https://avatars.githubusercontent.com/u/265666432?v=4",
-// "gravatar_id": "",
-// "url": "https://api.github.com/users/chavezdaviddiego29072003-collab",
-// "html_url": "https://github.com/chavezdaviddiego29072003-collab",
-// "followers_url": "https://api.github.com/users/chavezdaviddiego29072003-collab/followers",
-// "following_url": "https://api.github.com/users/chavezdaviddiego29072003-collab/following{/other_user}",
-// "gists_url": "https://api.github.com/users/chavezdaviddiego29072003-collab/gists{/gist_id}",
-// "starred_url": "https://api.github.com/users/chavezdaviddiego29072003-collab/starred{/owner}{/repo}",
-// "subscriptions_url": "https://api.github.com/users/chavezdaviddiego29072003-collab/subscriptions",
-// "organizations_url": "https://api.github.com/users/chavezdaviddiego29072003-collab/orgs",
-// "repos_url":
-```

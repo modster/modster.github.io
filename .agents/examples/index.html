@@ -1,421 +1,463 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html class="dark" lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>GitHub - E. M Greeff</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#25d1f4",
-            "background-light": "#f5f8f8",
-            "background-dark": "#0a0f1e",
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GitHub - E. M Greeff</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#25d1f4',
+              'background-light': '#f5f8f8',
+              'background-dark': '#0a0f1e',
+            },
+            backgroundImage: {
+              'dark-gradient': 'linear-gradient(to bottom, #0a0f1e 0%, #050811 100%)',
+            },
+            fontFamily: {
+              display: ['Space Grotesk'],
+            },
+            borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' },
           },
-          backgroundImage: {
-            'dark-gradient': "linear-gradient(to bottom, #0a0f1e 0%, #050811 100%)",
-          },
-          fontFamily: {
-            "display": ["Space Grotesk"]
-          },
-          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
         },
-      },
-    }
-  </script>
-  <style>
-    .neon-glow {
-      box-shadow: 0 0 15px rgba(37, 209, 244, 0.2);
-    }
+      }
+    </script>
+    <style>
+      .neon-glow {
+        box-shadow: 0 0 15px rgba(37, 209, 244, 0.2);
+      }
 
-    .contribution-cell {
-      width: 12px;
-      height: 12px;
-      border-radius: 2px;
-    }
+      .contribution-cell {
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+      }
 
-    .hover-neon-glow:hover {
-      box-shadow: 0 0 20px rgba(37, 209, 244, 0.4);
-      border-color: rgba(37, 209, 244, 0.6);
-    }
-  </style>
-</head>
+      .hover-neon-glow:hover {
+        box-shadow: 0 0 20px rgba(37, 209, 244, 0.4);
+        border-color: rgba(37, 209, 244, 0.6);
+      }
+    </style>
+  </head>
 
-<body
-  class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen dark:bg-dark-gradient">
-  <div class="relative flex h-full w-full flex-col overflow-x-hidden">
-    <!-- Top Navigation -->
-    <header
-      class="flex items-center justify-between border-b border-primary/20 px-6 py-3 bg-[#0a0f1e]/80 backdrop-blur-md sticky top-0 z-50">
-      <div class="flex items-center gap-6">
-        <div class="flex items-center gap-3 text-primary">
-          <span class="material-symbols-outlined text-3xl">terminal</span>
-          <h2 class="text-xl font-bold tracking-tight">GitHub</h2>
-        </div>
-        <div class="hidden md:flex items-center bg-primary/10 border border-primary/20 rounded-lg px-3 py-1.5 w-64">
-          <span class="material-symbols-outlined text-primary/60 text-xl">search</span>
-          <input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-primary/40 w-full"
-            placeholder="Search or jump to..." type="text" />
-        </div>
-      </div>
-      <div class="flex items-center gap-6">
-        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
-          <a class="hover:text-primary transition-colors" href="#">Pull requests</a>
-          <a class="hover:text-primary transition-colors" href="#">Issues</a>
-          <a class="hover:text-primary transition-colors" href="#">Marketplace</a>
-          <a class="hover:text-primary transition-colors" href="#">Explore</a>
-        </nav>
-        <div class="flex items-center gap-3">
-          <button class="p-2 rounded-lg hover:bg-primary/10 transition-colors">
-            <span class="material-symbols-outlined">notifications</span>
-          </button>
-          <button class="p-2 rounded-lg hover:bg-primary/10 transition-colors">
-            <span class="material-symbols-outlined">add</span>
-          </button>
-          <div class="h-8 w-8 rounded-full border border-primary/40 overflow-hidden">
-            <img alt="User profile avatar" data-alt="Small circular user profile avatar"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuChcNcbk5q50yOEPwiHydQMNnVpKlCULut9PD1pqLFKy0186KfNHMxd80JqB8HV4NpJNjBPCal7S0c8zI-iZeb2HhSACLzRsbuIzo8dtl8ByFw0GTjcVyQDQs7WsN56b6QrGOy5GDbBpQThpuM-M8TOkCI4oHdHc_-VgJ6OXiYI5HBGFWXh1qgZ-ehrOVb3k_RFsPhq1PziDI1kuzYNEXak7I7IMLH_X9GkiQKFaiukzQVxfyadXb9OWnEwcRXNsFuEAqW7T4xN7Q" />
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen dark:bg-dark-gradient"
+  >
+    <div class="relative flex h-full w-full flex-col overflow-x-hidden">
+      <!-- Top Navigation -->
+      <header
+        class="flex items-center justify-between border-b border-primary/20 px-6 py-3 bg-[#0a0f1e]/80 backdrop-blur-md sticky top-0 z-50"
+      >
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-3 text-primary">
+            <span class="material-symbols-outlined text-3xl">terminal</span>
+            <h2 class="text-xl font-bold tracking-tight">GitHub</h2>
+          </div>
+          <div class="hidden md:flex items-center bg-primary/10 border border-primary/20 rounded-lg px-3 py-1.5 w-64">
+            <span class="material-symbols-outlined text-primary/60 text-xl">search</span>
+            <input
+              class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-primary/40 w-full"
+              placeholder="Search or jump to..."
+              type="text"
+            />
           </div>
         </div>
-      </div>
-    </header>
-    <main class="flex-1 flex flex-col md:flex-row max-w-[1400px] mx-auto w-full p-6 gap-8">
-      <!-- Sidebar -->
-      <aside class="w-full md:w-72 flex flex-col gap-6">
-        <div class="flex flex-col gap-4">
-          <div class="relative group">
-            <div class="absolute -inset-1 bg-primary opacity-20 blur group-hover:opacity-30 transition rounded-full">
-            </div>
-            <div class="relative bg-[#0a0f1e] rounded-full p-1 border-2 border-primary/30">
-              <div class="aspect-square w-full rounded-full overflow-hidden">
-                <img alt="Alex Dev Profile" class="w-full h-full object-cover"
-                  data-alt="Cyberpunk style developer portrait with neon accents"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW4ykyth6G0qg8pq1hKz0jhIK-rwAlHGJgNaqU_KNte0dZRQudpXr9hE_apHEz-RIMCGz3wqRe1ccGE9D__HxLgfS9x0eOwvSf8rjK_UR8dQIO5eg0jFv1166MScGqx85EGzfUQoFN1wIszv3rmX6qoKkwViK5TwLJKTKJ2CcUEtlu7OIEN0SrU93sgNKqNYsyTmCnrsys9Rs_VGA6ZEEDQIXJxPTp12BdjB1xhXrUXuIthg1Dt-ftf18iaqYHdsBqlcg6fqW-2w" />
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-bold">Alex Dev</h1>
-            <p class="text-primary/60">alex-dev-neon</p>
-          </div>
-          <p class="text-sm leading-relaxed">Full-stack developer building open-source tools with neon
-            aesthetics and high-performance Rust engines.</p>
-        </div>
-        <div class="flex flex-col gap-2">
-          <button
-            class="w-full bg-primary hover:bg-primary/80 text-background-dark font-bold py-2 rounded-lg transition-all shadow-lg shadow-primary/20">
-            Follow
-          </button>
-          <button
-            class="w-full flex items-center justify-center gap-2 border border-primary/30 hover:bg-primary/10 py-2 rounded-lg transition-all">
-            <span class="material-symbols-outlined text-pink-500 text-lg">favorite</span>
-            <span>Sponsor</span>
-          </button>
-        </div>
-        <div class="flex flex-col gap-4 border-t border-primary/10 pt-6">
-          <div class="flex items-center gap-3 group cursor-pointer">
-            <div class="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
-              <span class="material-symbols-outlined text-primary text-xl">share</span>
-            </div>
-            <div>
-              <p class="text-xs text-primary/50 uppercase font-bold tracking-wider">Twitter</p>
-              <p class="text-sm">@alexdev_neon</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 group cursor-pointer">
-            <div class="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
-              <span class="material-symbols-outlined text-primary text-xl">link</span>
-            </div>
-            <div>
-              <p class="text-xs text-primary/50 uppercase font-bold tracking-wider">LinkedIn</p>
-              <p class="text-sm">alex-dev-neon</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 group cursor-pointer">
-            <div class="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
-              <span class="material-symbols-outlined text-primary text-xl">chat</span>
-            </div>
-            <div>
-              <p class="text-xs text-primary/50 uppercase font-bold tracking-wider">Discord</p>
-              <p class="text-sm">alex_dev#0001</p>
+        <div class="flex items-center gap-6">
+          <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+            <a class="hover:text-primary transition-colors" href="#">Pull requests</a>
+            <a class="hover:text-primary transition-colors" href="#">Issues</a>
+            <a class="hover:text-primary transition-colors" href="#">Marketplace</a>
+            <a class="hover:text-primary transition-colors" href="#">Explore</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <button class="p-2 rounded-lg hover:bg-primary/10 transition-colors">
+              <span class="material-symbols-outlined">notifications</span>
+            </button>
+            <button class="p-2 rounded-lg hover:bg-primary/10 transition-colors">
+              <span class="material-symbols-outlined">add</span>
+            </button>
+            <div class="h-8 w-8 rounded-full border border-primary/40 overflow-hidden">
+              <img
+                alt="User profile avatar"
+                data-alt="Small circular user profile avatar"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuChcNcbk5q50yOEPwiHydQMNnVpKlCULut9PD1pqLFKy0186KfNHMxd80JqB8HV4NpJNjBPCal7S0c8zI-iZeb2HhSACLzRsbuIzo8dtl8ByFw0GTjcVyQDQs7WsN56b6QrGOy5GDbBpQThpuM-M8TOkCI4oHdHc_-VgJ6OXiYI5HBGFWXh1qgZ-ehrOVb3k_RFsPhq1PziDI1kuzYNEXak7I7IMLH_X9GkiQKFaiukzQVxfyadXb9OWnEwcRXNsFuEAqW7T4xN7Q"
+              />
             </div>
           </div>
         </div>
-      </aside>
-      <!-- Main Content Area -->
-      <section class="flex-1 flex flex-col gap-8">
-        <!-- Contribution Graph -->
-        <div
-          class="bg-primary/5 border border-primary/20 rounded-xl p-6 neon-glow hover-neon-glow transition-all duration-300">
-          <div class="flex items-center justify-between mb-4">
-            <h3 class="font-bold flex items-center gap-2 flex-1">
-              <span class="material-symbols-outlined text-primary">analytics</span>
-              642 contributions in the last year
-            </h3>
-            <div class="text-xs text-primary/60 flex gap-2"><span>Less</span>
-              <div class="contribution-cell bg-primary/10 border border-primary/20"></div>
-              <div class="contribution-cell bg-primary/30"></div>
-              <div class="contribution-cell bg-primary/60"></div>
-              <div class="contribution-cell bg-primary shadow-[0_0_8px_#25d1f4]"></div> <span>More</span>
+      </header>
+      <main class="flex-1 flex flex-col md:flex-row max-w-[1400px] mx-auto w-full p-6 gap-8">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-72 flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <div class="relative group">
+              <div
+                class="absolute -inset-1 bg-primary opacity-20 blur group-hover:opacity-30 transition rounded-full"
+              ></div>
+              <div class="relative bg-[#0a0f1e] rounded-full p-1 border-2 border-primary/30">
+                <div class="aspect-square w-full rounded-full overflow-hidden">
+                  <img
+                    alt="Alex Dev Profile"
+                    class="w-full h-full object-cover"
+                    data-alt="Cyberpunk style developer portrait with neon accents"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW4ykyth6G0qg8pq1hKz0jhIK-rwAlHGJgNaqU_KNte0dZRQudpXr9hE_apHEz-RIMCGz3wqRe1ccGE9D__HxLgfS9x0eOwvSf8rjK_UR8dQIO5eg0jFv1166MScGqx85EGzfUQoFN1wIszv3rmX6qoKkwViK5TwLJKTKJ2CcUEtlu7OIEN0SrU93sgNKqNYsyTmCnrsys9Rs_VGA6ZEEDQIXJxPTp12BdjB1xhXrUXuIthg1Dt-ftf18iaqYHdsBqlcg6fqW-2w"
+                  />
+                </div>
+              </div>
             </div>
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-bold">Alex Dev</h1>
+              <p class="text-primary/60">alex-dev-neon</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Full-stack developer building open-source tools with neon aesthetics and high-performance Rust engines.
+            </p>
           </div>
-          <div class="flex flex-wrap gap-1">
-            <!-- Simulated Grid of Contribution Cells -->
-            <div class="grid grid-rows-7 grid-flow-col gap-1.5 flex-1 max-w-full overflow-hidden">
-              <!-- Column 1 -->
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/40"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/60"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <!-- Column 2 -->
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/30"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <!-- Column 3 (Glowing) -->
-              <div class="contribution-cell bg-primary/80 shadow-[0_0_8px_#25d1f4]"></div>
-              <div class="contribution-cell bg-primary/60"></div>
-              <div class="contribution-cell bg-primary/40"></div>
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/90 shadow-[0_0_10px_#25d1f4]"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <!-- Column 4 -->
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <!-- Repeating pattern for density -->
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/40"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/60"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/30"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/80 shadow-[0_0_8px_#25d1f4]"></div>
-              <div class="contribution-cell bg-primary/60"></div>
-              <div class="contribution-cell bg-primary/40"></div>
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/90 shadow-[0_0_10px_#25d1f4]"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary shadow-[0_0_12px_#25d1f4]"></div>
-              <div class="contribution-cell bg-primary/80"></div>
-              <div class="contribution-cell bg-primary/60"></div>
-              <div class="contribution-cell bg-primary/40"></div>
-              <div class="contribution-cell bg-primary/20"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-              <div class="contribution-cell bg-primary/10"></div>
-            </div>
-          </div>
-        </div>
-        <!-- Pinned Repositories -->
-        <div>
-          <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
-            <span class="material-symbols-outlined text-primary">push_pin</span>
-            Pinned Repositories
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Repo 1 -->
-            <div
-              class="bg-primary/5 border border-primary/20 rounded-xl p-4 hover:border-primary/50 transition-colors group hover-neon-glow transition-all duration-300">
-              <div class="flex justify-between items-start mb-2">
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary">folder</span>
-                  <h4 class="font-bold text-primary">neon-ui-kit</h4>
-                </div>
-                <span
-                  class="bg-green-500/20 text-green-400 text-[10px] px-2 py-0.5 rounded uppercase font-bold tracking-widest border border-green-500/30">build:
-                  passing</span>
-              </div>
-              <p class="text-sm text-slate-400 mb-4">A high-performance React UI component library
-                designed for sci-fi and developer-centric interfaces.</p>
-              <div class="flex items-center gap-4 text-xs text-primary/60">
-                <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-primary"></span>
-                  TypeScript</span>
-                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">star</span>
-                  1.2k</span>
-                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">fork_right</span>
-                  84</span>
-              </div>
-            </div>
-            <!-- Repo 2 -->
-            <div
-              class="bg-primary/5 border border-primary/20 rounded-xl p-4 hover:border-primary/50 transition-colors group hover-neon-glow transition-all duration-300">
-              <div class="flex justify-between items-start mb-2">
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary">folder</span>
-                  <h4 class="font-bold text-primary">graphql-blade</h4>
-                </div>
-                <span
-                  class="bg-green-500/20 text-green-400 text-[10px] px-2 py-0.5 rounded uppercase font-bold tracking-widest border border-green-500/30">build:
-                  passing</span>
-              </div>
-              <p class="text-sm text-slate-400 mb-4">Ultrafast GraphQL query engine written in Go with
-                built-in caching and edge deployment capabilities.</p>
-              <div class="flex items-center gap-4 text-xs text-primary/60">
-                <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-blue-400"></span> Go</span>
-                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">star</span>
-                  842</span>
-                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">fork_right</span>
-                  12</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Metrics & Activity -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- Language Distribution -->
-          <div class="bg-primary/5 border border-primary/20 rounded-xl p-6 hover-neon-glow transition-all duration-300">
-            <h3 class="font-bold mb-6 flex items-center gap-2 flex-1">
-              <span class="material-symbols-outlined text-primary">pie_chart</span>
-              Language Distribution
-            </h3>
-            <div class="flex flex-col items-center">
-              <div class="relative w-40 h-40 mb-6">
-                <div class="absolute inset-0 rounded-full border-[16px] border-primary/10"></div>
-                <div
-                  class="absolute inset-0 rounded-full border-[16px] border-primary border-t-transparent border-l-transparent rotate-45 shadow-[0_0_10px_rgba(37,209,244,0.3)]">
-                </div>
-                <div class="absolute inset-0 flex flex-col items-center justify-center">
-                  <span class="text-2xl font-bold">78%</span>
-                  <span class="text-[10px] uppercase text-primary/50">TypeScript</span>
-                </div>
-              </div>
-              <div class="grid grid-cols-2 gap-4 w-full">
-                <div class="flex items-center gap-2">
-                  <div class="w-3 h-3 rounded-full bg-primary"></div>
-                  <span class="text-sm">TypeScript</span>
-                  <span class="text-sm text-primary/50 ml-auto">78%</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <div class="w-3 h-3 rounded-full bg-orange-400"></div>
-                  <span class="text-sm">Rust</span>
-                  <span class="text-sm text-primary/50 ml-auto">12%</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <div class="w-3 h-3 rounded-full bg-blue-400"></div>
-                  <span class="text-sm">Go</span>
-                  <span class="text-sm text-primary/50 ml-auto">6%</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <div class="w-3 h-3 rounded-full bg-slate-500"></div>
-                  <span class="text-sm">Other</span>
-                  <span class="text-sm text-primary/50 ml-auto">4%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Latest Activity -->
-          <div class="bg-primary/5 border border-primary/20 rounded-xl p-6 hover-neon-glow transition-all duration-300">
-            <h3 class="font-bold mb-6 flex items-center gap-2 flex-1">
-              <span class="material-symbols-outlined text-primary">history</span>
-              Latest Activity
-            </h3>
-            <div class="flex flex-col gap-6">
-              <!-- Activity Item 1 -->
-              <div class="flex gap-4 relative">
-                <div class="absolute left-3 top-8 bottom-[-24px] w-px bg-primary/20"></div>
-                <div
-                  class="z-10 bg-[#0a0f1e] border border-primary/40 rounded-full p-1.5 h-7 w-7 flex items-center justify-center">
-                  <span class="material-symbols-outlined text-primary text-[16px]">commit</span>
-                </div>
-                <div class="flex flex-col">
-                  <p class="text-sm">
-                    <span class="font-bold">Merged PR</span> into <span class="text-primary">neon-ui-kit/main</span>
-                  </p>
-                  <p class="text-xs text-primary/40">2 hours ago</p>
-                </div>
-              </div>
-              <!-- Activity Item 2 -->
-              <div class="flex gap-4 relative">
-                <div class="absolute left-3 top-8 bottom-[-24px] w-px bg-primary/20"></div>
-                <div
-                  class="z-10 bg-[#0a0f1e] border border-primary/40 rounded-full p-1.5 h-7 w-7 flex items-center justify-center">
-                  <span class="material-symbols-outlined text-yellow-500 text-[16px]">star</span>
-                </div>
-                <div class="flex flex-col">
-                  <p class="text-sm">
-                    <span class="font-bold">Starred</span> <span class="text-primary">rust-lang/rust-analyzer</span>
-                  </p>
-                  <p class="text-xs text-primary/40">5 hours ago</p>
-                </div>
-              </div>
-              <!-- Activity Item 3 -->
-              <div class="flex gap-4">
-                <div
-                  class="z-10 bg-[#0a0f1e] border border-primary/40 rounded-full p-1.5 h-7 w-7 flex items-center justify-center">
-                  <span class="material-symbols-outlined text-green-400 text-[16px]">add_circle</span>
-                </div>
-                <div class="flex flex-col">
-                  <p class="text-sm">
-                    <span class="font-bold">Created repository</span> <span class="text-primary">atlas-engine</span>
-                  </p>
-                  <p class="text-xs text-primary/40">Yesterday</p>
-                </div>
-              </div>
-            </div>
+          <div class="flex flex-col gap-2">
             <button
-              class="w-full mt-8 text-primary/60 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors">
-              View All Activity
+              class="w-full bg-primary hover:bg-primary/80 text-background-dark font-bold py-2 rounded-lg transition-all shadow-lg shadow-primary/20"
+            >
+              Follow
+            </button>
+            <button
+              class="w-full flex items-center justify-center gap-2 border border-primary/30 hover:bg-primary/10 py-2 rounded-lg transition-all"
+            >
+              <span class="material-symbols-outlined text-pink-500 text-lg">favorite</span>
+              <span>Sponsor</span>
             </button>
           </div>
+          <div class="flex flex-col gap-4 border-t border-primary/10 pt-6">
+            <div class="flex items-center gap-3 group cursor-pointer">
+              <div class="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
+                <span class="material-symbols-outlined text-primary text-xl">share</span>
+              </div>
+              <div>
+                <p class="text-xs text-primary/50 uppercase font-bold tracking-wider">Twitter</p>
+                <p class="text-sm">@alexdev_neon</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 group cursor-pointer">
+              <div class="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
+                <span class="material-symbols-outlined text-primary text-xl">link</span>
+              </div>
+              <div>
+                <p class="text-xs text-primary/50 uppercase font-bold tracking-wider">LinkedIn</p>
+                <p class="text-sm">alex-dev-neon</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 group cursor-pointer">
+              <div class="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
+                <span class="material-symbols-outlined text-primary text-xl">chat</span>
+              </div>
+              <div>
+                <p class="text-xs text-primary/50 uppercase font-bold tracking-wider">Discord</p>
+                <p class="text-sm">alex_dev#0001</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- Main Content Area -->
+        <section class="flex-1 flex flex-col gap-8">
+          <!-- Contribution Graph -->
+          <div
+            class="bg-primary/5 border border-primary/20 rounded-xl p-6 neon-glow hover-neon-glow transition-all duration-300"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="font-bold flex items-center gap-2 flex-1">
+                <span class="material-symbols-outlined text-primary">analytics</span>
+                642 contributions in the last year
+              </h3>
+              <div class="text-xs text-primary/60 flex gap-2">
+                <span>Less</span>
+                <div class="contribution-cell bg-primary/10 border border-primary/20"></div>
+                <div class="contribution-cell bg-primary/30"></div>
+                <div class="contribution-cell bg-primary/60"></div>
+                <div class="contribution-cell bg-primary shadow-[0_0_8px_#25d1f4]"></div>
+                <span>More</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-1">
+              <!-- Simulated Grid of Contribution Cells -->
+              <div class="grid grid-rows-7 grid-flow-col gap-1.5 flex-1 max-w-full overflow-hidden">
+                <!-- Column 1 -->
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/40"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/60"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <!-- Column 2 -->
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/30"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <!-- Column 3 (Glowing) -->
+                <div class="contribution-cell bg-primary/80 shadow-[0_0_8px_#25d1f4]"></div>
+                <div class="contribution-cell bg-primary/60"></div>
+                <div class="contribution-cell bg-primary/40"></div>
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/90 shadow-[0_0_10px_#25d1f4]"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <!-- Column 4 -->
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <!-- Repeating pattern for density -->
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/40"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/60"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/30"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/80 shadow-[0_0_8px_#25d1f4]"></div>
+                <div class="contribution-cell bg-primary/60"></div>
+                <div class="contribution-cell bg-primary/40"></div>
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/90 shadow-[0_0_10px_#25d1f4]"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary shadow-[0_0_12px_#25d1f4]"></div>
+                <div class="contribution-cell bg-primary/80"></div>
+                <div class="contribution-cell bg-primary/60"></div>
+                <div class="contribution-cell bg-primary/40"></div>
+                <div class="contribution-cell bg-primary/20"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+                <div class="contribution-cell bg-primary/10"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Pinned Repositories -->
+          <div>
+            <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary">push_pin</span>
+              Pinned Repositories
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Repo 1 -->
+              <div
+                class="bg-primary/5 border border-primary/20 rounded-xl p-4 hover:border-primary/50 transition-colors group hover-neon-glow transition-all duration-300"
+              >
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">folder</span>
+                    <h4 class="font-bold text-primary">neon-ui-kit</h4>
+                  </div>
+                  <span
+                    class="bg-green-500/20 text-green-400 text-[10px] px-2 py-0.5 rounded uppercase font-bold tracking-widest border border-green-500/30"
+                    >build: passing</span
+                  >
+                </div>
+                <p class="text-sm text-slate-400 mb-4">
+                  A high-performance React UI component library designed for sci-fi and developer-centric interfaces.
+                </p>
+                <div class="flex items-center gap-4 text-xs text-primary/60">
+                  <span class="flex items-center gap-1"
+                    ><span class="w-3 h-3 rounded-full bg-primary"></span> TypeScript</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><span class="material-symbols-outlined text-xs">star</span> 1.2k</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><span class="material-symbols-outlined text-xs">fork_right</span> 84</span
+                  >
+                </div>
+              </div>
+              <!-- Repo 2 -->
+              <div
+                class="bg-primary/5 border border-primary/20 rounded-xl p-4 hover:border-primary/50 transition-colors group hover-neon-glow transition-all duration-300"
+              >
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">folder</span>
+                    <h4 class="font-bold text-primary">graphql-blade</h4>
+                  </div>
+                  <span
+                    class="bg-green-500/20 text-green-400 text-[10px] px-2 py-0.5 rounded uppercase font-bold tracking-widest border border-green-500/30"
+                    >build: passing</span
+                  >
+                </div>
+                <p class="text-sm text-slate-400 mb-4">
+                  Ultrafast GraphQL query engine written in Go with built-in caching and edge deployment capabilities.
+                </p>
+                <div class="flex items-center gap-4 text-xs text-primary/60">
+                  <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-blue-400"></span> Go</span>
+                  <span class="flex items-center gap-1"
+                    ><span class="material-symbols-outlined text-xs">star</span> 842</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><span class="material-symbols-outlined text-xs">fork_right</span> 12</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Metrics & Activity -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Language Distribution -->
+            <div
+              class="bg-primary/5 border border-primary/20 rounded-xl p-6 hover-neon-glow transition-all duration-300"
+            >
+              <h3 class="font-bold mb-6 flex items-center gap-2 flex-1">
+                <span class="material-symbols-outlined text-primary">pie_chart</span>
+                Language Distribution
+              </h3>
+              <div class="flex flex-col items-center">
+                <div class="relative w-40 h-40 mb-6">
+                  <div class="absolute inset-0 rounded-full border-[16px] border-primary/10"></div>
+                  <div
+                    class="absolute inset-0 rounded-full border-[16px] border-primary border-t-transparent border-l-transparent rotate-45 shadow-[0_0_10px_rgba(37,209,244,0.3)]"
+                  ></div>
+                  <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <span class="text-2xl font-bold">78%</span>
+                    <span class="text-[10px] uppercase text-primary/50">TypeScript</span>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 w-full">
+                  <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-primary"></div>
+                    <span class="text-sm">TypeScript</span>
+                    <span class="text-sm text-primary/50 ml-auto">78%</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-orange-400"></div>
+                    <span class="text-sm">Rust</span>
+                    <span class="text-sm text-primary/50 ml-auto">12%</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-blue-400"></div>
+                    <span class="text-sm">Go</span>
+                    <span class="text-sm text-primary/50 ml-auto">6%</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-slate-500"></div>
+                    <span class="text-sm">Other</span>
+                    <span class="text-sm text-primary/50 ml-auto">4%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Latest Activity -->
+            <div
+              class="bg-primary/5 border border-primary/20 rounded-xl p-6 hover-neon-glow transition-all duration-300"
+            >
+              <h3 class="font-bold mb-6 flex items-center gap-2 flex-1">
+                <span class="material-symbols-outlined text-primary">history</span>
+                Latest Activity
+              </h3>
+              <div class="flex flex-col gap-6">
+                <!-- Activity Item 1 -->
+                <div class="flex gap-4 relative">
+                  <div class="absolute left-3 top-8 bottom-[-24px] w-px bg-primary/20"></div>
+                  <div
+                    class="z-10 bg-[#0a0f1e] border border-primary/40 rounded-full p-1.5 h-7 w-7 flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined text-primary text-[16px]">commit</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <p class="text-sm">
+                      <span class="font-bold">Merged PR</span> into
+                      <span class="text-primary">neon-ui-kit/main</span>
+                    </p>
+                    <p class="text-xs text-primary/40">2 hours ago</p>
+                  </div>
+                </div>
+                <!-- Activity Item 2 -->
+                <div class="flex gap-4 relative">
+                  <div class="absolute left-3 top-8 bottom-[-24px] w-px bg-primary/20"></div>
+                  <div
+                    class="z-10 bg-[#0a0f1e] border border-primary/40 rounded-full p-1.5 h-7 w-7 flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined text-yellow-500 text-[16px]">star</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <p class="text-sm">
+                      <span class="font-bold">Starred</span>
+                      <span class="text-primary">rust-lang/rust-analyzer</span>
+                    </p>
+                    <p class="text-xs text-primary/40">5 hours ago</p>
+                  </div>
+                </div>
+                <!-- Activity Item 3 -->
+                <div class="flex gap-4">
+                  <div
+                    class="z-10 bg-[#0a0f1e] border border-primary/40 rounded-full p-1.5 h-7 w-7 flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined text-green-400 text-[16px]">add_circle</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <p class="text-sm">
+                      <span class="font-bold">Created repository</span>
+                      <span class="text-primary">atlas-engine</span>
+                    </p>
+                    <p class="text-xs text-primary/40">Yesterday</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="w-full mt-8 text-primary/60 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+              >
+                View All Activity
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="border-t border-primary/10 py-10 px-6 mt-12">
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <div class="flex items-center gap-3 text-primary/40">
+            <span class="material-symbols-outlined text-2xl">terminal</span>
+            <p class="text-sm">© 2024 GitHub, Inc. Built for the future.</p>
+          </div>
+          <div class="flex gap-6 text-sm text-primary/40">
+            <a class="hover:text-primary transition-colors" href="#">Blog</a>
+            <a class="hover:text-primary transition-colors" href="#">About</a>
+            <a class="hover:text-primary transition-colors" href="#">Shop</a>
+            <a class="hover:text-primary transition-colors" href="#">Contact GitHub</a>
+            <a class="hover:text-primary transition-colors" href="#">Pricing</a>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="border-t border-primary/10 py-10 px-6 mt-12">
-      <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="flex items-center gap-3 text-primary/40">
-          <span class="material-symbols-outlined text-2xl">terminal</span>
-          <p class="text-sm">© 2024 GitHub, Inc. Built for the future.</p>
-        </div>
-        <div class="flex gap-6 text-sm text-primary/40">
-          <a class="hover:text-primary transition-colors" href="#">Blog</a>
-          <a class="hover:text-primary transition-colors" href="#">About</a>
-          <a class="hover:text-primary transition-colors" href="#">Shop</a>
-          <a class="hover:text-primary transition-colors" href="#">Contact GitHub</a>
-          <a class="hover:text-primary transition-colors" href="#">Pricing</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>

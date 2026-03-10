@@ -2,13 +2,15 @@
 
 ## Content for github profile
 
-### *whoami*
+### _whoami_
+
 Eric M. Greeff
 emg@greeffer.com
 +1-226-932-0820
 
-### *bio* 
-*@mention other users and organizations to link to them.*
+### _bio_
+
+_@mention other users and organizations to link to them._
 
 **to do**
 
@@ -16,25 +18,28 @@ emg@greeffer.com
 
 [greeffer.com](https://greeffer.com)
 
-### *Social accounts*
+### _Social accounts_
 
 - x.com/goodgreeff
 - github.com/modster
 - linkedin.com/in/emgreeff
-### *Company*
-*You can **@mention** the company’s GitHub organization to link it.*
+
+### _Company_
+
+_You can **@mention** the company’s GitHub organization to link it._
 
 [@DataDrivenSoftware](https://datadash.cloud)
-### *Location* 
+
+### _Location_
 
 Ontario, Canada
-*Time Zone:* America/Toronto
+_Time Zone:_ America/Toronto
 
-### *Profile picture*
+### _Profile picture_
 
  ![@modster](https://avatars.githubusercontent.com/u/893946?s=400&u=7d63e8c0263d2f02bc3a74d96536d6b56abc8578&v=4)
 
-### *Pinned Repos*
+### _Pinned Repos_
 
 1. Android Camera
 2. DataViz
@@ -43,30 +48,34 @@ Ontario, Canada
 5. WebGL/WebGPU
 6. PineScript (TradingView's DSL)
 
-### *Contributions & activity*
+### _Contributions & activity_
+
 Enabling this will make public your contributions and activity from your GitHub profile and from social features like followers, stars, feeds, leaderboards and releases.
 
 - following: who and why
 - project I'm stargazng
 - followers
 
-### *Achievements*
+### _Achievements_
 
 - Badges
 - Contribution Graph
 - GitHub Developer Program
 
-### *Support Email Address*
+### _Support Email Address_
+
 An email address where GitHub users can contact you for support.
 
 - support@datadash.cloud
 
-### *Product or company website*
+### _Product or company website_
+
 The URL for the product, company, or service that integrates with GitHub.
 
 [datadash.cloud](https://datadash.cloud)
 
 ### *Jobs profile* 
+
 Available for hire
 
 ## Stack

@@ -1,21 +1,15 @@
 {
   "folders": [
     {
-      "path": "."
-    }
+      "path": ".",
+    },
   ],
   "settings": {
-    "oxc.fmt.configPath": ".oxfmtrc.json",
     "editor.defaultFormatter": "oxc.oxc-vscode",
     "editor.formatOnSave": true,
-    "[javascript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
+    "editor.formatOnSaveMode": "file",
     "[jsonc]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
+      "editor.defaultFormatter": "oxc.oxc-vscode"
     },
-    "[html]": {
-      "editor.defaultFormatter": "vscode.html-language-features"
-    }
-  }
+  },
 }
