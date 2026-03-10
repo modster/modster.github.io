@@ -1,5 +1,0 @@
-schema: "schema.graphql"
-documents: "src/**/*.{graphql,js,ts,jsx,tsx}"
-host: "https://api.github.com/graphql"
-headers:
-  Authorization: "Bearer ${process.env.GITHUB_TOKEN}"

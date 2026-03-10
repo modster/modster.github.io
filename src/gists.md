@@ -4,7 +4,7 @@ toc: false
 ---
 
 ```js
-import { utcParse } from "npm:d3-time-format"
+// import { utcParse } from "npm:d3-time-format"
 const gists = FileAttachment("/data/gh-gists.tsv").tsv({ array: true, typed: true })
 // const columns [0, 1, 2, 3, 4] = gists.columns
 
@@ -15,13 +15,13 @@ const source = FileAttachment("/data/gh-gists.tsv").href
 ## Gists
 
 ```js
-const gistsData = gists.map((gist) => {
+display(gists.map((gist) => {
     return {
       name: gist[0],
       description: gist[1],
       files: gist[2],
       visibility: gist[3],
-      lastUpdate: utcParse(gist[4]),
+      lastUpdate: gist[4],
     }
   }),
 )
