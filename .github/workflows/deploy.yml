@@ -2,9 +2,9 @@ name: Deploy
 
 on:
   # Run this workflow whenever a new commit is pushed to main.
-  push: { branches: [main] }
+  push: {branches: [main]}
   # Run this workflow once per day, at 10:15 UTC
-  schedule: [{ cron: "15 10 * * *" }]
+  schedule: [{cron: "15 10 * * *"}]
   # Run this workflow when triggered manually in GitHub’s UI.
   workflow_dispatch: {}
 
@@ -33,5 +33,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-        env:
-          GH_TOKEN: ${{ github.token }}

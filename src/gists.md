@@ -15,13 +15,13 @@ const source = FileAttachment("/data/gh/gh-gists.tsv").href
 ## Gists
 
 ```js
-const columns = gists.map((gist) => {
+const gistsData = gists.map((gist) => {
     return {
-      [gist[0]]: name,
-      [gist[1]]: description,
-      [gist[2]]: files,
-      [gist[3]]: visibility,
-      [gist[4]]: lastUpdate,
+      name: gist[0],
+      description: gist[1],
+      files: gist[2],
+      visibility: gist[3],
+      lastUpdate: utcParse(gist[4]),
     }
   }),
 )
@@ -31,12 +31,17 @@ const columns = gists.map((gist) => {
 
 <div class="card" style="height: 500px;">
 <h2>Gists</h2>
-  <h3>
-    <a href=${source} target="\_blank">source</a>
-  </h3>
-  ${resize((width, height) => Inputs.table(gistsData, {
+<h3><a href=${source} target="\_blank">source</a></h3>
+  ${resize((width) => Inputs.table(gists, {
     width,
-    columns: [name, description, files, visibility, lastUpdate],
+    columns: [0,1,2,3,4],
+    header: [
+      0: "Name", 
+      1: "Description", 
+      2: "Files", 
+      3: "Visibility", 
+      4: "Last Update"
+    ],
     format: {
       1: (description) => html`<a href=${link} target="\_blank" alt=${description}>${description}</a>`,
       4: (date) => new Date(date).toLocaleString(),
@@ -44,6 +49,5 @@ const columns = gists.map((gist) => {
     select: false,
     layout: "fixed",
     multiple: false,
-  }),
-)}
+  }))}
 </div>
