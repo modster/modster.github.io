@@ -1,0 +1,29 @@
+mutation UpdateUserStatus(
+  $emoji: String
+  $message: String
+  $organizationId: ID
+  $limitedAvailability: Boolean
+  $expiresAt: DateTime
+) {
+  changeUserStatus(
+    input: {
+      emoji: $emoji
+      message: $message
+      organizationId: $organizationId
+      limitedAvailability: $limitedAvailability
+      expiresAt: $expiresAt
+    }
+  ) {
+    status {
+      emoji
+      message
+      indicatesLimitedAvailability
+      expiresAt
+      updatedAt
+      user {
+        login
+        name
+      }
+    }
+  }
+}
