@@ -1,6 +1,10 @@
-## @modster
+# AGENTS.md
 
-## Content for github profile
+This is a github pages site for user @modster's made using the Observable Framework.
+
+Check the examples folder (.agents/examples) for an  example website that you can use as a starting point.
+
+## Content for @modster's GitHub profile
 
 ### _whoami_
 

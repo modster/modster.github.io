@@ -1,15 +1,18 @@
-import "dotenv/config"
+import "varlock/auto-load"
+import { assertEquals } from "@std/assert"
 
-const { GITHUB_USER } = process.env
-if (!GITHUB_USER) {
+const { GITHUB_PAT } = process.env
+if (!GITHUB_PAT) {
   console.warn(
-    "Warning: GITHUB_USER environment variable is not set. GitHub-related features may not work properly.",
+    "Warning: GITHUB_PAT environment variable is not set. GitHub-related features may not work properly.",
   )
 } else {
-  console.log(`GITHUB_USER: ${GITHUB_USER} ✔️`)
+  console.log("Token Set ✔️")
 }
 
 export const {
+  GH_USERNAME,
+  GH_REPO,
   SUPPORT_EMAIL,
   PRIVACY_EMAIL,
   DEV_ADDRESS,
@@ -25,7 +28,7 @@ console.log(`DEV_CITY: ${DEV_CITY ? "✔️" : "Not set"} `)
 console.log(`DEV_NAME: ${DEV_NAME ? "✔️" : "Not set"} `)
 console.log(`DEV_COUNTRY: ${DEV_COUNTRY ? "✔️" : "Not set"} `)
 
-assertEquals(GITHUB_USER, "modster", "GITHUB_USER should be 'modster'")
+assertEquals(GH_USERNAME, "modster", "GITHUB_USER should be 'modster'")
 // assertEquals(GITHUB_USER, "modster", "GITHUB_USER should be 'modster'")
 // assertEquals(GITHUB_USER, "modster", "GITHUB_USER should be 'modster'")
 // assertEquals(GITHUB_USER, "modster", "GITHUB_USER should be 'modster'")
