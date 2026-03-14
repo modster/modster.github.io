@@ -7,3 +7,4 @@ yarn-error.log
 !.env.example
 .notes/
 .pi/
+!.env.schema
