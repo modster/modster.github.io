@@ -97,7 +97,7 @@ npm install
 Then, to start the local preview server, run:
 
 ```
-pnpm run dev
+npm run dev
 ```
 
 Then visit <http://localhost:3000> to preview your app.
@@ -144,4 +144,48 @@ A typical Framework project looks like this:
 | `npm run build`      | Build your static site, generating `./dist` |
 | `npm run deploy`     | Deploy your app to Observable               |
 | `npm run clean`      | Clear the local data loader cache           |
+| `npm run test`       | Run configuration tests                     |
 | `npm run observable` | Run commands like `observable help`         |
+
+## Code Style
+
+This project uses **Prettier** for formatting. Run `npx prettier --write .` to format all files.
+
+### Formatting
+- No semicolons
+- Single quotes for strings
+- Auto embedded language formatting in markdown code blocks
+
+### JavaScript Conventions
+- Use ESM imports/exports (`import { x } from 'module'`)
+- Use `const` over `let`; avoid `var`
+- Use template literals over string concatenation
+- Use async/await over Promise .then() chains
+
+### Naming
+- Variables/functions: `camelCase`
+- Components/classes: `PascalCase`
+- Files: `kebab-case.js`
+
+### Error Handling
+- Use try/catch with async functions
+- Log errors with meaningful context
+- Never expose sensitive data in error messages
+
+### Example
+```javascript
+async function fetchData(url) {
+  try {
+    const response = await fetch(url)
+    if (!response.ok) throw new Error(`HTTP ${response.status}`)
+    return await response.json()
+  } catch (error) {
+    console.error(`Failed to fetch ${url}:`, error.message)
+    throw error
+  }
+}
+```
+
+### Git Conventions
+- Branch: `feature/description` or `fix/description`
+- Commit: Present tense, imperative mood ("Add feature" not "Added feature")
