@@ -1,5 +1,0 @@
----
-title: Following
----
-
-# Following
