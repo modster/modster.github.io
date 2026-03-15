@@ -1,11 +1,8 @@
-name: Deploy
+name: Deploy with Deploy Action
 
 on:
-  # Run this workflow whenever a new commit is pushed to main.
-  push: { branches: [main] }
-  # Run this workflow once per day, at 10:15 UTC
-  schedule: [{ cron: "15 10 * * *" }]
-  # Run this workflow when triggered manually in GitHub's UI.
+  push: {branches: [main]}
+  schedule: [{cron: "15 10 * * *"}]
   workflow_dispatch: {}
 
 jobs:
@@ -13,11 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,7 +21,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
-            const path = require('path');
 
             // Fetch user data
             const { data: user } = await github.rest.users.getByUsername({
@@ -63,7 +54,13 @@ jobs:
             console.log(`✓ Updated repos.json (${repos.length} repos)`);
 
             // Create TSV for repos
-            const reposTsv = repos.map(r => [r.name, r.html_url, r.stargazers_count, r.language || 'N/A', r.description || ''].join('\t')).join('\n');
+            const reposTsv = repos.map(r => [
+              r.name,
+              r.html_url,
+              r.stargazers_count,
+              r.language || 'N/A',
+              r.description || ''
+            ].join('\t')).join('\n');
             fs.writeFileSync('src/data/repos.tsv', 'name\thtml_url\tstargazers_count\tlanguage\tdescription\n' + reposTsv);
             console.log('✓ Updated repos.tsv');
 
@@ -78,19 +75,16 @@ jobs:
         with:
           node-version: 22
           cache: npm
+
       - run: npm ci
-      - id: date
-        run: echo "date=$(TZ=America/Toronto date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-      - id: cache-data
-        uses: actions/cache@v4
-        with:
-          path: src/.observablehq/cache
-          key: data-${{ hashFiles('src/data/*') }}-${{ steps.date.outputs.date }}
       - run: npm run build
-      - uses: actions/configure-pages@v4
-      - uses: actions/upload-pages-artifact@v3
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: dist
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          folder: dist
+          branch: gh-pages
+          clean: true
+          clean-exclude: |
+            .nojekyll
+            CNAME
