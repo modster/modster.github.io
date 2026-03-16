@@ -1,0 +1,56 @@
+[
+  {
+    "name": "modster.github.io",
+    "description": "The profile of Calgary programmer Eric Michael Greeff. Built with Observable Framework.",
+    "url": "https://github.com/modster/modster.github.io",
+    "primaryLanguage": {"name": "JavaScript", "color": "#f1e05a"},
+    "stargazerCount": 12,
+    "forkCount": 3,
+    "buildStatus": "passing"
+  },
+  {
+    "name": "congenial-funicular",
+    "description": "A dataviz experiment using observablehq/framework and ccxt for cryptocurrency trading analysis.",
+    "url": "https://github.com/modster/congenial-funicular",
+    "primaryLanguage": {"name": "TypeScript", "color": "#3178c6"},
+    "stargazerCount": 45,
+    "forkCount": 8,
+    "buildStatus": "passing"
+  },
+  {
+    "name": "dotfiles",
+    "description": "My personal dotfiles configuration for development environments.",
+    "url": "https://github.com/modster/dotfiles",
+    "primaryLanguage": {"name": "Shell", "color": "#89e051"},
+    "stargazerCount": 23,
+    "forkCount": 5,
+    "buildStatus": "passing"
+  },
+  {
+    "name": "openclaw",
+    "description": "Landing pages for GCP OAuth application with modern UI.",
+    "url": "https://github.com/modster/openclaw",
+    "primaryLanguage": {"name": "HTML", "color": "#e34c26"},
+    "stargazerCount": 8,
+    "forkCount": 2,
+    "buildStatus": "passing"
+  },
+  {
+    "name": "floor-is-llava",
+    "description": "Generate images based on text prompts using Workers AI and Cloudflare.",
+    "url": "https://github.com/modster/floor-is-llava",
+    "primaryLanguage": {"name": "TypeScript", "color": "#3178c6"},
+    "stargazerCount": 67,
+    "forkCount": 12,
+    "buildStatus": "passing"
+  },
+  {
+    "name": "observable-plugin",
+    "description": "Obsidian Plugin Template for building custom plugins.",
+    "url": "https://github.com/modster/observable-plugin",
+    "primaryLanguage": {"name": "TypeScript", "color": "#3178c6"},
+    "stargazerCount": 34,
+    "forkCount": 7,
+    "buildStatus": "passing"
+  }
+]

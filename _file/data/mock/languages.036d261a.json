@@ -1,0 +1,11 @@
+{
+  "JavaScript": {"bytes": 4200000, "percentage": 42},
+  "TypeScript": {"bytes": 2800000, "percentage": 28},
+  "HTML": {"bytes": 850000, "percentage": 9},
+  "Shell": {"bytes": 620000, "percentage": 6},
+  "CSS": {"bytes": 450000, "percentage": 5},
+  "Python": {"bytes": 380000, "percentage": 4},
+  "Rust": {"bytes": 250000, "percentage": 3},
+  "Go": {"bytes": 180000, "percentage": 2},
+  "Other": {"bytes": 90000, "percentage": 1}
+}
