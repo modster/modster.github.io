@@ -37,14 +37,14 @@ export default {
   // header: "", // what to show in the header (HTML)
   footer:
     "Built with <a href='https://observablehq.com/framework'>Observable Framework</a>. | <a href='/privacy-policy'>Privacy Policy</a> | <a href='/terms-of-service'>Terms of Service</a>", // what to show in the footer (HTML)
-  sidebar: false, // whether to show the sidebar
-  toc: true, // whether to show the table of contents
-  pager: false, // whether to show previous & next links in the footer
+  sidebar: true, // whether to show the sidebar
+  toc: false, // whether to show the table of contents
+  pager: true, // whether to show previous & next links in the footer
   output: "dist", // path to the output root for build
-  search: true, // activate search
-  linkify: true, // convert URLs in Markdown to links
-  typographer: true, // smart quotes and other typographic improvements
-  style: "style.css",
+  // search: true, // activate search
+  // linkify: true, // convert URLs in Markdown to links
+  // typographer: true, // smart quotes and other typographic improvements
+  // style: "style.css",
   // preserveExtension: false, // drop .html from URLs
   // preserveIndex: false, // drop /index from URLs
 }

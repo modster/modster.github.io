@@ -222,7 +222,8 @@ const dailyContributions = contributionWeeks.flatMap((week) => week.contribution
     y: (d) => d.date.getUTCMonth(), 
     fill: "contributionLevel", 
     tip: true, inset: 0.5
-    }).plot({marginTop: 0, height: 240, padding: 0})}
+    }).plot({marginTop: 0, height: 240, padding: 0})}  
+    
 </div>
 
 ### Pinned Repositories
