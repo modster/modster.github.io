@@ -1,4 +1,5 @@
 ---
+title: "Page Loader Example"
 draft: true
 ---
 
