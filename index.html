@@ -13,10 +13,374 @@
 <link rel="modulepreload" href="./_observablehq/client.7eb65c98.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/7c43807f.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/e324157d.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/5ced1d52.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/3785bf2d.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/720b7f0a.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/02d43215.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/aa00730b.js">
 <link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script type="module">
 
-import "./_observablehq/client.7eb65c98.js";
+import {define} from "./_observablehq/client.7eb65c98.js";
+import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
+
+registerFile("./data/contributions.json", {"name":"./data/contributions.json","mimeType":"application/json","path":"./_file/data/contributions.1e17a913.json","lastModified":1773709281514,"size":49152});
+registerFile("./data/events.json", {"name":"./data/events.json","mimeType":"application/json","path":"./_file/data/events.f007f50d.json","lastModified":1773709281514,"size":1262});
+registerFile("./data/languages.json", {"name":"./data/languages.json","mimeType":"application/json","path":"./_file/data/languages.036d261a.json","lastModified":1773709281515,"size":433});
+registerFile("./data/mock/events.json", {"name":"./data/mock/events.json","mimeType":"application/json","path":"./_file/data/mock/events.f007f50d.json","lastModified":1773709281516,"size":1262});
+registerFile("./data/mock/languages.json", {"name":"./data/mock/languages.json","mimeType":"application/json","path":"./_file/data/mock/languages.036d261a.json","lastModified":1773709281516,"size":433});
+registerFile("./data/mock/pinned-repos.json", {"name":"./data/mock/pinned-repos.json","mimeType":"application/json","path":"./_file/data/mock/pinned-repos.6b6a8ef4.json","lastModified":1773709281516,"size":1974});
+registerFile("./data/pinned-repos.json", {"name":"./data/pinned-repos.json","mimeType":"application/json","path":"./_file/data/pinned-repos.6b6a8ef4.json","lastModified":1773709281516,"size":1974});
+registerFile("./data/user.json", {"name":"./data/user.json","mimeType":"application/json","path":"./_file/data/user.52591778.json","lastModified":1773709281793,"size":1504});
+
+define({id: "2836adf9", inputs: ["FileAttachment"], outputs: ["user","contributions","pinnedRepos","events","languages","joinedAt","now","accountAgeDays","accountAgeYears","blogUrl","userAvatarUrl","formatNumber","getTimeAgo","getEventIcon","getEventDescription","getContributionLevel","normalizeContributionWeeks","contributionWeeks","contributionDay"], body: async (FileAttachment) => {
+// Load all data sources
+const user = await FileAttachment("./data/user.json").json()
+const contributions = await FileAttachment("./data/contributions.json")
+  .json()
+  // .catch(() => FileAttachment("/data/mock/contributions.json").json())
+const pinnedRepos = await FileAttachment("./data/pinned-repos.json")
+  .json()
+  .catch(() => FileAttachment("./data/mock/pinned-repos.json").json())
+const events = await FileAttachment("./data/events.json")
+  .json()
+  .catch(() => FileAttachment("./data/mock/events.json").json())
+const languages = await FileAttachment("./data/languages.json")
+  .json()
+  .catch(() => FileAttachment("./data/mock/languages.json").json())
+
+// Calculate derived values
+const joinedAt = new Date(user.created_at)
+const now = new Date()
+const accountAgeDays = Math.floor((now - joinedAt) / (1000 * 60 * 60 * 24))
+const accountAgeYears = Math.floor(accountAgeDays / 365.25)
+
+const blogUrl = user.blog ? `https://${user.blog}` : null
+const userAvatarUrl = `${user.avatar_url}`
+
+// Helper functions
+const formatNumber = (num) => num?.toLocaleString("en-US") || "0"
+
+const getTimeAgo = (dateString) => {
+  const date = new Date(dateString)
+  const diff = Math.floor((now - date) / 1000)
+  if (diff < 60) return "just now"
+  if (diff < 3600) return `${Math.floor(diff / 60)} minutes ago`
+  if (diff < 86400) return `${Math.floor(diff / 3600)} hours ago`
+  if (diff < 604800) return `${Math.floor(diff / 86400)} days ago`
+  return `${Math.floor(diff / 604800)} weeks ago`
+}
+
+const getEventIcon = (type) => {
+  switch (type) {
+    case "PushEvent":
+      return "commit"
+    case "PullRequestEvent":
+      return "merge_type"
+    case "WatchEvent":
+      return "star"
+    case "CreateEvent":
+      return "add_circle"
+    default:
+      return "circle"
+  }
+}
+
+const getEventDescription = (event) => {
+  switch (event.type) {
+    case "PushEvent":
+      return { action: "Pushed to", target: event.repo.split("/")[1] }
+    case "PullRequestEvent":
+      if (event.payload?.pull_request?.merged) {
+        return { action: "Merged PR into", target: event.repo.split("/")[1] }
+      }
+      return { action: "Opened PR in", target: event.repo.split("/")[1] }
+    case "WatchEvent":
+      return { action: "Starred", target: event.repo }
+    case "CreateEvent":
+      return { action: "Created", target: event.repo.split("/")[1] }
+    default:
+      return { action: "Activity in", target: event.repo }
+  }
+}
+
+// Process contribution data for display
+const getContributionLevel = (count) => {
+  if (count === 0) return 0
+  if (count < 3) return 1
+  if (count < 6) return 2
+  if (count < 10) return 3
+  return 4
+}
+
+const normalizeContributionWeeks = (weeks = []) => {
+  const desiredWeeks = 52
+  const daysInWeek = 7
+  const normalized = Array.isArray(weeks)
+    ? weeks.filter((week) => Array.isArray(week?.contributionDays))
+    : []
+
+  const paddedWeeks = [...normalized]
+
+  if (paddedWeeks.length < desiredWeeks) {
+    const firstDayDate = paddedWeeks[0]?.contributionDays?.[0]?.date
+      ? new Date(paddedWeeks[0].contributionDays[0].date)
+      : new Date(now)
+
+    while (paddedWeeks.length < desiredWeeks) {
+      const lastMissingIndex = desiredWeeks - paddedWeeks.length
+      const weekStart = new Date(firstDayDate)
+      weekStart.setDate(firstDayDate.getDate() - lastMissingIndex * daysInWeek)
+
+      const contributionDays = Array.from(
+        { length: daysInWeek },
+        (_, weekday) => {
+          const date = new Date(weekStart)
+          date.setDate(weekStart.getDate() + weekday)
+          return {
+            contributionCount: 0,
+            date: date.toISOString().slice(0, 10),
+            weekday,
+          }
+        },
+      )
+
+      paddedWeeks.unshift({ contributionDays })
+    }
+  }
+
+  return paddedWeeks.slice(-desiredWeeks)
+}
+
+const contributionWeeks = normalizeContributionWeeks(contributions.weeks)
+
+const contributionDay = contributions.weeks.map((week) => ({
+  ...week,
+  contributionDays: week.contributionDays.map((day) => ({
+    ...day,
+    contributionLevel: getContributionLevel(day.contributionCount),
+  })),
+}))
+
+return {user,contributions,pinnedRepos,events,languages,joinedAt,now,accountAgeDays,accountAgeYears,blogUrl,userAvatarUrl,formatNumber,getTimeAgo,getEventIcon,getEventDescription,getContributionLevel,normalizeContributionWeeks,contributionWeeks,contributionDay};
+}});
+
+define({id: "aebb81d8", mode: "inline", inputs: ["user","display"], body: async (user,display) => {
+display(await(
+user.login
+))
+}});
+
+define({id: "c85139be", mode: "inline", inputs: ["user","display"], body: async (user,display) => {
+display(await(
+user.name || user.login
+))
+}});
+
+define({id: "aebb81d8-1", mode: "inline", inputs: ["user","display"], body: async (user,display) => {
+display(await(
+user.login
+))
+}});
+
+define({id: "93e896b3", mode: "inline", inputs: ["joinedAt","display"], body: async (joinedAt,display) => {
+display(await(
+joinedAt.toLocaleDateString("en-CA", { year: "numeric", month: "short", day: "numeric" })
+))
+}});
+
+define({id: "28282ae3", mode: "inline", inputs: ["accountAgeYears","display"], body: async (accountAgeYears,display) => {
+display(await(
+accountAgeYears
+))
+}});
+
+define({id: "ce2a6f9b", mode: "inline", inputs: ["user","display"], body: async (user,display) => {
+display(await(
+user.type
+))
+}});
+
+define({id: "f94793e5", mode: "inline", inputs: ["user","display"], body: async (user,display) => {
+display(await(
+user.hireable ? "Yes" : "No"
+))
+}});
+
+define({id: "bbf30d4f", mode: "inline", inputs: ["formatNumber","user","display"], body: async (formatNumber,user,display) => {
+display(await(
+formatNumber(user.public_repos)
+))
+}});
+
+define({id: "edfb60d1", mode: "inline", inputs: ["formatNumber","user","display"], body: async (formatNumber,user,display) => {
+display(await(
+formatNumber(user.followers)
+))
+}});
+
+define({id: "4e025e14", mode: "inline", inputs: ["formatNumber","user","display"], body: async (formatNumber,user,display) => {
+display(await(
+formatNumber(user.following)
+))
+}});
+
+define({id: "4e025e14-1", mode: "inline", inputs: ["formatNumber","user","display"], body: async (formatNumber,user,display) => {
+display(await(
+formatNumber(user.following)
+))
+}});
+
+define({id: "fe1a0e37", mode: "inline", inputs: ["formatNumber","user","display"], body: async (formatNumber,user,display) => {
+display(await(
+formatNumber(user.public_gists)
+))
+}});
+
+define({id: "cc7cc38b", mode: "inline", inputs: ["contributions","display"], body: async (contributions,display) => {
+display(await(
+contributions.totalContributions || "0"
+))
+}});
+
+define({id: "e6336226", inputs: ["contributionWeeks"], outputs: ["getContributionLevel","dailyContributions"], body: (contributionWeeks) => {
+const getContributionLevel = (count) => {
+  if (count === 0) return 0
+  if (count < 5) return 1
+  if (count < 10) return 2
+  if (count < 20) return 3
+  return 4
+}
+
+const dailyContributions = contributionWeeks.flatMap((week) => week.contributionDays.map((day) => ({
+  ...day,
+  date: new Date(day.date),
+  contributionLevel: getContributionLevel(day.contributionCount),
+})))
+
+// Plot.cell(dailyContributions, {
+//     x: (d) => d.date.getUTCDate(), 
+//     y: (d) => d.date.getUTCMonth(),
+//     fill: "temp_max",
+//     tip: true,
+//     inset: 0.5
+// }).plot({marginTop: 0, height: 240, padding: 0})
+
+return {getContributionLevel,dailyContributions};
+}});
+
+define({id: "ad7f53be", mode: "inline", inputs: ["resize","Plot","dailyContributions","display"], body: async (resize,Plot,dailyContributions,display) => {
+display(await(
+resize((width, height) => (Plot.cell(dailyContributions.slice(-365), {
+    width,
+    height,
+    x: (d) => d.date.getUTCDate(), 
+    y: (d) => d.date.getUTCMonth(), 
+    fill: "contributionLevel", 
+    tip: true, inset: 0.5
+    }).plot({marginTop: 0, height: 240, padding: 0})))
+))
+}});
+
+define({id: "344e7311", mode: "inline", inputs: ["pinnedRepos","html","formatNumber","display"], body: async (pinnedRepos,html,formatNumber,display) => {
+display(await(
+pinnedRepos.map(repo => `
+    <a href="${repo.url}" target="_blank" class="repo-card">
+      <div class="flex justify-between items-start mb-2">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">folder</span>
+          <h4 class="font-bold text-primary">${repo.name}</h4>
+        </div>
+        <span class="status-badge status-passing">build: passing</span>
+      </div>
+      <p class="text-sm text-muted mb-4 line-clamp-2">${repo.description || "No description provided"}</p>
+      <div class="flex items-center gap-4 text-xs text-faint">
+        ${repo.primaryLanguage ? html`
+        <span class="flex items-center gap-1">
+          <span class="repo-language-dot" style="background-color: ${repo.primaryLanguage.color || '#666'}"></span>
+          ${repo.primaryLanguage.name}
+        </span>
+        ` : ''}
+        <span class="flex items-center gap-1">
+          <span class="material-symbols-outlined text-xs">star</span>
+          ${formatNumber(repo.stargazerCount)}
+        </span>
+        <span class="flex items-center gap-1">
+          <span class="material-symbols-outlined text-xs">fork_right</span>
+          ${formatNumber(repo.forkCount)}
+        </span>
+      </div>
+    </a>
+    `).join('')
+))
+}});
+
+define({id: "af34e0e8", mode: "inline", inputs: ["getEventIcon","event","display"], body: async (getEventIcon,event,display) => {
+display(await(
+getEventIcon(event.type)
+))
+}});
+
+define({id: "af34e0e8-1", mode: "inline", inputs: ["getEventIcon","event","display"], body: async (getEventIcon,event,display) => {
+display(await(
+getEventIcon(event.type)
+))
+}});
+
+define({id: "44f6d4d5", mode: "inline", inputs: ["desc","display"], body: async (desc,display) => {
+display(await(
+desc.action
+))
+}});
+
+define({id: "a8eac7d7", mode: "inline", inputs: ["desc","display"], body: async (desc,display) => {
+display(await(
+desc.target
+))
+}});
+
+define({id: "58fca9f3", mode: "inline", inputs: ["getTimeAgo","event","display"], body: async (getTimeAgo,event,display) => {
+display(await(
+getTimeAgo(event.created_at)
+))
+}});
 
 </script>
 </head>
@@ -29,19 +393,157 @@ import "./_observablehq/client.7eb65c98.js";
     <li class="observablehq-link observablehq-link-active"><a href="./">@modster</a></li>
   </ol>
   <ol>
-    <li class="observablehq-link"><a href="./dual-layer">Dual Layer</a></li>
-    <li class="observablehq-link"><a href="./kimi">@modster</a></li>
+    <li class="observablehq-link"><a href="./contributions">Contributions</a></li>
     <li class="observablehq-link"><a href="./privacy-policy">Privacy Policy</a></li>
     <li class="observablehq-link"><a href="./terms-of-service">Terms of Service</a></li>
+    <li class="observablehq-link"><a href="./drafts/dual-layer">Dual Layer</a></li>
   </ol>
 </nav>
 <script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
-<h1 id="home" tabindex="-1"><a class="observablehq-header-anchor" href="#home">home</a></h1>
-</main>
+<div class="observablehq observablehq--block"><!--:2836adf9:--></div>
+<h1 id="" tabindex="-1"><a class="observablehq-header-anchor" href="#">@<observablehq-loading></observablehq-loading><!--:aebb81d8:--></a></h1>
+<div class="container mx-auto px-4 py-8">
+<h2 id="account-stats" tabindex="-1"><a class="observablehq-header-anchor" href="#account-stats">Account Stats</a></h2>
+<h3 id="account" tabindex="-1"><a class="observablehq-header-anchor" href="#account">Account</a></h3>
+<img src="./_file/images/893946.64fcb064.jpg" alt="${user.name}'s avatar" class="w-16 h-16 rounded-full border-2 border-primary">
+<div>
+  <h2 class="text-xl font-bold text-primary"><observablehq-loading></observablehq-loading><!--:c85139be:--></h2>
+  <p class="text-sm text-faint">@<observablehq-loading></observablehq-loading><!--:aebb81d8-1:--></p>
+</div>
+  <div class="space-y-3 text-sm">
+    <div class="flex justify-between">
+      <span class="text-muted">Joined</span>
+      <span><observablehq-loading></observablehq-loading><!--:93e896b3:--></span>
+    </div>
+    <div class="card flex justify-between">
+      <span class="text-muted">Age</span>
+      <span><observablehq-loading></observablehq-loading><!--:28282ae3:--> years</span>
+    </div>
+    <div class="card flex justify-between">
+      <span class="text-muted">Type</span>
+      <span><observablehq-loading></observablehq-loading><!--:ce2a6f9b:--></span>
+    </div>
+    <div class="card flex justify-between">
+      <span class="text-muted">Hireable</span>
+      <span class="${user.hireable ? 'text-green-400' : 'text-faint'}"><observablehq-loading></observablehq-loading><!--:f94793e5:--></span>
+    </div>
+  </div>
+</div>
+<h2 id="stats-cards" tabindex="-1"><a class="observablehq-header-anchor" href="#stats-cards">Stats Cards</a></h2>
+<h3 id="key-metrics" tabindex="-1"><a class="observablehq-header-anchor" href="#key-metrics">Key Metrics</a></h3>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+  <div class="neon-card text-center hover-neon-glow">
+    <p class="text-faint text-xs uppercase tracking-wider mb-1">Repositories</p>
+    <p class="text-3xl font-bold text-primary"><observablehq-loading></observablehq-loading><!--:bbf30d4f:--></p>
+  </div>
+  <div class="neon-card text-center hover-neon-glow">
+    <p class="text-faint text-xs uppercase tracking-wider mb-1">Followers</p>
+    <p class="text-3xl font-bold text-primary"><observablehq-loading></observablehq-loading><!--:edfb60d1:--></p>
+  </div>
+  <div class="neon-card text-center hover-neon-glow">
+    <p class="text-faint text-xs uppercase tracking-wider mb-1">Following</p>
+    <p class="text-3xl font-bold text-primary"><observablehq-loading></observablehq-loading><!--:4e025e14:--></p>
+  </div>
+  <div class="neon-card text-center hover-neon-glow">
+    <p class="text-faint text-xs uppercase tracking-wider mb-1">Following</p>
+    <p class="text-3xl font-bold text-primary"><observablehq-loading></observablehq-loading><!--:4e025e14-1:--></p>
+  </div>
+  <div class="neon-card text-center hover-neon-glow">
+    <p class="text-faint text-xs uppercase tracking-wider mb-1">Gists</p>
+    <p class="text-3xl font-bold text-primary"><observablehq-loading></observablehq-loading><!--:fe1a0e37:--></p>
+  </div>
+</div>
+<h3 id="contribution-graph" tabindex="-1"><a class="observablehq-header-anchor" href="#contribution-graph">Contribution Graph</a></h3>
+<h4 id="contributions" tabindex="-1"><a class="observablehq-header-anchor" href="#contributions">Contributions</a></h4>
+<p><observablehq-loading></observablehq-loading><!--:cc7cc38b:--> contributions in the last year</p>
+<div class="observablehq observablehq--block"><!--:e6336226:--></div>
+<grid class="grid grid-cols-4" style="grid-auto-rows: auto;">
+  <card class="card colspan-4">
+  <h2>Daily Contributions</h2>
+  <h3>Lorem Ipsum</h3>
+  <observablehq-loading></observablehq-loading><!--:ad7f53be:-->
+  </card>
+</grid>
+<h3 id="pinned-repositories" tabindex="-1"><a class="observablehq-header-anchor" href="#pinned-repositories">Pinned Repositories</a></h3>
+<div>
+  <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+    <span class="material-symbols-outlined text-primary">push_pin</span>
+    Pinned Repositories
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    ${html`<observablehq-loading></observablehq-loading><!--:344e7311:-->
+  </div>
+</div>
+<h3 id="language-distribution-and-activity" tabindex="-1"><a class="observablehq-header-anchor" href="#language-distribution-and-activity">Language Distribution &amp; Activity</a></h3>
+<pre><code>  &lt;div class="grid grid-cols-1 lg:grid-cols-2 gap-8"&gt;
+
+    &lt;!-- Language Distribution --&gt;
+    &lt;div class="neon-card hover-neon-glow"&gt;
+      &lt;h3 class="font-bold mb-6 flex items-center gap-2"&gt;
+        &lt;span class="material-symbols-outlined text-primary"&gt;pie_chart&lt;/span&gt;
+        Language Distribution
+      &lt;/h3&gt;
+
+      &lt;!-- Language Bar --&gt;
+      &lt;div class="lang-bar mb-6"&gt;
+        ${html`${Object.entries(languages).slice(0, 5).map(([lang, data]) =&gt; `
+          &lt;div class="lang-segment" style="width: ${data.percentage}%; background-color: ${lang === 'JavaScript' ? '#f1e05a' : lang === 'TypeScript' ? '#3178c6' : lang === 'HTML' ? '#e34c26' : lang === 'Shell' ? '#89e051' : lang === 'CSS' ? '#563d7c' : '#666'}"&gt;&lt;/div&gt;
+        `).join('')}`}
+      &lt;/div&gt;
+
+      &lt;!-- Language Legend --&gt;
+      &lt;div class="space-y-2"&gt;
+        ${html`${Object.entries(languages).slice(0, 5).map(([lang, data]) =&gt; `
+        &lt;div class="flex items-center justify-between text-sm"&gt;
+          &lt;div class="flex items-center gap-2"&gt;
+            &lt;span class="w-3 h-3 rounded-full" style="background-color: ${lang === 'JavaScript' ? '#f1e05a' : lang === 'TypeScript' ? '#3178c6' : lang === 'HTML' ? '#e34c26' : lang === 'Shell' ? '#89e051' : lang === 'CSS' ? '#563d7c' : '#666'}"&gt;&lt;/span&gt;
+            &lt;span&gt;${lang}&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;span class="text-faint"&gt;${data.percentage}%&lt;/span&gt;
+        &lt;/div&gt;
+        `).join('')}`}
+      &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<h3 id="latest-activity" tabindex="-1"><a class="observablehq-header-anchor" href="#latest-activity">Latest Activity --&gt;</a></h3>
+<div class="neon-card hover-neon-glow">
+  <h3 class="font-bold mb-6 flex items-center gap-2">
+    <span class="material-symbols-outlined text-primary">history</span>
+    <span>Latest Activity</span>
+  </h3>
+<div class="timeline">
+  ${events.slice(0, 5).map((event, index) =&gt; {
+    const desc = getEventDescription(event)
+    const isLast = index === events.slice(0, 5).length - 1
+    display(html`<div class="timeline-item ${isLast ? 'pb-0' : ''}">
+      <div class="z-10 bg-[#0a0f1e] border border-primary/40 rounded-full p-1 h-6 w-6 flex items-center justify-center absolute -left-[1.85rem] top-0">
+        <span class="material-symbols-outlined text-primary text-sm"><observablehq-loading></observablehq-loading><!--:af34e0e8:--></span>
+      </div>
+      <div class="flex flex-col">
+        <p class="text-sm">
+  </p><div class="timeline-item ${isLast ? 'pb-0' : ''}">
+  <div class="z-10 bg-[#0a0f1e] border border-primary/40 rounded-full p-1 h-6 w-6 flex items-center justify-center absolute -left-[1.85rem] top-0">
+    <span class="material-symbols-outlined text-primary text-sm"><observablehq-loading></observablehq-loading><!--:af34e0e8-1:--></span>
+  </div>
+  <div class="flex flex-col">
+    <p class="text-sm">
+      <span class="font-bold"><observablehq-loading></observablehq-loading><!--:44f6d4d5:--></span>
+      <span class="text-primary"><observablehq-loading></observablehq-loading><!--:a8eac7d7:--></span>
+    </p>
+    <p class="text-xs text-faint"><observablehq-loading></observablehq-loading><!--:58fca9f3:--></p>
+  </div>
+</div>}).join('')}
+</div>
+<a href="https://github.com/$%7Buser.login%7D?tab=activity" target="_blank" class="block mt-6 text-center text-xs font-bold uppercase tracking-widest text-faint hover:text-primary transition-colors" rel="noopener noreferrer">
+View All Activity
+</a>
+</div>  
+</div>
+</div></main>
 <footer id="observablehq-footer">
-<nav><a rel="next" href="./dual-layer"><span>Dual Layer</span></a></nav>
+<nav><a rel="next" href="./contributions"><span>Contributions</span></a></nav>
 <div>Built with <a href="https://observablehq.com/framework" target="_blank" rel="noopener noreferrer">Observable Framework</a>. | <a href="./privacy-policy">Privacy Policy</a> | <a href="./terms-of-service">Terms of Service</a></div>
 </footer>
 </div>
