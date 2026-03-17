@@ -924,27 +924,6 @@
     "site_admin": false
   },
   {
-    "login": "hrach347",
-    "id": 80620675,
-    "node_id": "MDQ6VXNlcjgwNjIwNjc1",
-    "avatar_url": "https://avatars.githubusercontent.com/u/80620675?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/hrach347",
-    "html_url": "https://github.com/hrach347",
-    "followers_url": "https://api.github.com/users/hrach347/followers",
-    "following_url": "https://api.github.com/users/hrach347/following{/other_user}",
-    "gists_url": "https://api.github.com/users/hrach347/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/hrach347/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/hrach347/subscriptions",
-    "organizations_url": "https://api.github.com/users/hrach347/orgs",
-    "repos_url": "https://api.github.com/users/hrach347/repos",
-    "events_url": "https://api.github.com/users/hrach347/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/hrach347/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  {
     "login": "smart0327",
     "id": 84361961,
     "node_id": "MDQ6VXNlcjg0MzYxOTYx",
