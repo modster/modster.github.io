@@ -1,0 +1,28 @@
+@import url("observablehq:default.css");
+@import url("observablehq:theme-near-midnight.css");
+
+.neon-glow {
+  box-shadow: 0 0 15px rgba(37, 209, 244, 0.2);
+}
+
+.contribution-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.hover-neon-glow:hover {
+  box-shadow: 0 0 20px rgba(37, 209, 244, 0.4);
+  border-color: rgba(37, 209, 244, 0.6);
+}
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.profile-layout {
+  min-height: calc(100vh - 8rem);
+}

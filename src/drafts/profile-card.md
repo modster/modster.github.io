@@ -40,9 +40,9 @@ const blogUrl = user.blog ? `https://${user.blog}` : null
 </div>
 <!-- Action Buttons -->
 <div class="flex flex-col w-full gap-2">
-    <a href="${user.html_url}" target="_blank" class="btn-primary text-center">
+    ${html`<a href="${user.html_url}" target="_blank" class="btn-primary text-center">
     <span>Follow</span>
-    </a>
+    </a>`}
     <a href="https://github.com/sponsors/${user.login}" target="_blank" class="btn-outline flex items-center justify-center gap-2">
     <span>Sponsor</span>
     <span class="material-symbols-outlined">dollar</span>
@@ -63,7 +63,7 @@ ${user.twitter_username ? `
 </a>
 ` : ''}
 ${user.blog ?
-<a href="${blogUrl}" target="_blank" class="social-link">
+<a href="../${blogUrl}" target="_blank" class="social-link">
     <div class="social-icon">
     <span class="material-symbols-outlined">link</span>
     </div>

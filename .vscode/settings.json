@@ -2,5 +2,8 @@
     "github-actions.workflows.pinned.workflows": [
         ".github/workflows/deploy.yml"
     ],
-    "workbench.colorTheme": "Quiet Light"
+    "workbench.colorTheme": "Quiet Light",
+    "markdown.validate.ignoredLinks": [
+        "${repo.url}"
+    ]
 }
