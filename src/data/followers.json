@@ -945,27 +945,6 @@
     "site_admin": false
   },
   {
-    "login": "lxRbckl",
-    "id": 84994842,
-    "node_id": "MDQ6VXNlcjg0OTk0ODQy",
-    "avatar_url": "https://avatars.githubusercontent.com/u/84994842?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/lxRbckl",
-    "html_url": "https://github.com/lxRbckl",
-    "followers_url": "https://api.github.com/users/lxRbckl/followers",
-    "following_url": "https://api.github.com/users/lxRbckl/following{/other_user}",
-    "gists_url": "https://api.github.com/users/lxRbckl/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/lxRbckl/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/lxRbckl/subscriptions",
-    "organizations_url": "https://api.github.com/users/lxRbckl/orgs",
-    "repos_url": "https://api.github.com/users/lxRbckl/repos",
-    "events_url": "https://api.github.com/users/lxRbckl/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/lxRbckl/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  {
     "login": "Sarrac3873",
     "id": 86988333,
     "node_id": "MDQ6VXNlcjg2OTg4MzMz",
