@@ -2079,6 +2079,27 @@
     "site_admin": false
   },
   {
+    "login": "daverayment",
+    "id": 7127766,
+    "node_id": "MDQ6VXNlcjcxMjc3NjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7127766?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/daverayment",
+    "html_url": "https://github.com/daverayment",
+    "followers_url": "https://api.github.com/users/daverayment/followers",
+    "following_url": "https://api.github.com/users/daverayment/following{/other_user}",
+    "gists_url": "https://api.github.com/users/daverayment/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/daverayment/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/daverayment/subscriptions",
+    "organizations_url": "https://api.github.com/users/daverayment/orgs",
+    "repos_url": "https://api.github.com/users/daverayment/repos",
+    "events_url": "https://api.github.com/users/daverayment/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/daverayment/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  {
     "login": "hpwit",
     "id": 7348175,
     "node_id": "MDQ6VXNlcjczNDgxNzU=",
