@@ -903,27 +903,6 @@
     "site_admin": false
   },
   {
-    "login": "helallao",
-    "id": 78656003,
-    "node_id": "MDQ6VXNlcjc4NjU2MDAz",
-    "avatar_url": "https://avatars.githubusercontent.com/u/78656003?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/helallao",
-    "html_url": "https://github.com/helallao",
-    "followers_url": "https://api.github.com/users/helallao/followers",
-    "following_url": "https://api.github.com/users/helallao/following{/other_user}",
-    "gists_url": "https://api.github.com/users/helallao/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/helallao/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/helallao/subscriptions",
-    "organizations_url": "https://api.github.com/users/helallao/orgs",
-    "repos_url": "https://api.github.com/users/helallao/repos",
-    "events_url": "https://api.github.com/users/helallao/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/helallao/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  {
     "login": "jaabari",
     "id": 79965910,
     "node_id": "MDQ6VXNlcjc5OTY1OTEw",
