@@ -1680,6 +1680,27 @@
     "site_admin": false
   },
   {
+    "login": "0xhustlerr",
+    "id": 168149590,
+    "node_id": "U_kgDOCgXCVg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/168149590?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/0xhustlerr",
+    "html_url": "https://github.com/0xhustlerr",
+    "followers_url": "https://api.github.com/users/0xhustlerr/followers",
+    "following_url": "https://api.github.com/users/0xhustlerr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/0xhustlerr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/0xhustlerr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/0xhustlerr/subscriptions",
+    "organizations_url": "https://api.github.com/users/0xhustlerr/orgs",
+    "repos_url": "https://api.github.com/users/0xhustlerr/repos",
+    "events_url": "https://api.github.com/users/0xhustlerr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/0xhustlerr/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  {
     "login": "marketcode-algo",
     "id": 178668374,
     "node_id": "U_kgDOCqZDVg",
