@@ -1806,27 +1806,6 @@
     "site_admin": false
   },
   {
-    "login": "submitaitools",
-    "id": 208140262,
-    "node_id": "U_kgDODGf35g",
-    "avatar_url": "https://avatars.githubusercontent.com/u/208140262?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/submitaitools",
-    "html_url": "https://github.com/submitaitools",
-    "followers_url": "https://api.github.com/users/submitaitools/followers",
-    "following_url": "https://api.github.com/users/submitaitools/following{/other_user}",
-    "gists_url": "https://api.github.com/users/submitaitools/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/submitaitools/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/submitaitools/subscriptions",
-    "organizations_url": "https://api.github.com/users/submitaitools/orgs",
-    "repos_url": "https://api.github.com/users/submitaitools/repos",
-    "events_url": "https://api.github.com/users/submitaitools/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/submitaitools/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  {
     "login": "jollified",
     "id": 218045597,
     "node_id": "U_kgDODP8cnQ",
