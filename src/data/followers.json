@@ -1155,27 +1155,6 @@
     "site_admin": false
   },
   {
-    "login": "jusot99",
-    "id": 105233950,
-    "node_id": "U_kgDOBkW-Hg",
-    "avatar_url": "https://avatars.githubusercontent.com/u/105233950?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/jusot99",
-    "html_url": "https://github.com/jusot99",
-    "followers_url": "https://api.github.com/users/jusot99/followers",
-    "following_url": "https://api.github.com/users/jusot99/following{/other_user}",
-    "gists_url": "https://api.github.com/users/jusot99/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/jusot99/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/jusot99/subscriptions",
-    "organizations_url": "https://api.github.com/users/jusot99/orgs",
-    "repos_url": "https://api.github.com/users/jusot99/repos",
-    "events_url": "https://api.github.com/users/jusot99/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/jusot99/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  {
     "login": "cdnxtsx",
     "id": 105583070,
     "node_id": "U_kgDOBksR3g",
