@@ -987,27 +987,6 @@
     "site_admin": false
   },
   {
-    "login": "procerezo",
-    "id": 93773842,
-    "node_id": "U_kgDOBZbgEg",
-    "avatar_url": "https://avatars.githubusercontent.com/u/93773842?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/procerezo",
-    "html_url": "https://github.com/procerezo",
-    "followers_url": "https://api.github.com/users/procerezo/followers",
-    "following_url": "https://api.github.com/users/procerezo/following{/other_user}",
-    "gists_url": "https://api.github.com/users/procerezo/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/procerezo/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/procerezo/subscriptions",
-    "organizations_url": "https://api.github.com/users/procerezo/orgs",
-    "repos_url": "https://api.github.com/users/procerezo/repos",
-    "events_url": "https://api.github.com/users/procerezo/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/procerezo/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  {
     "login": "imehdit",
     "id": 95843257,
     "node_id": "U_kgDOBbZzuQ",
