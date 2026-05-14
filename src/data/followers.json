@@ -189,27 +189,6 @@
     "site_admin": false
   },
   {
-    "login": "CelaDaniel",
-    "id": 13622306,
-    "node_id": "MDQ6VXNlcjEzNjIyMzA2",
-    "avatar_url": "https://avatars.githubusercontent.com/u/13622306?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/CelaDaniel",
-    "html_url": "https://github.com/CelaDaniel",
-    "followers_url": "https://api.github.com/users/CelaDaniel/followers",
-    "following_url": "https://api.github.com/users/CelaDaniel/following{/other_user}",
-    "gists_url": "https://api.github.com/users/CelaDaniel/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/CelaDaniel/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/CelaDaniel/subscriptions",
-    "organizations_url": "https://api.github.com/users/CelaDaniel/orgs",
-    "repos_url": "https://api.github.com/users/CelaDaniel/repos",
-    "events_url": "https://api.github.com/users/CelaDaniel/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/CelaDaniel/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  {
     "login": "IDouble",
     "id": 18186995,
     "node_id": "MDQ6VXNlcjE4MTg2OTk1",
