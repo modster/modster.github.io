@@ -1680,6 +1680,27 @@
     "site_admin": false
   },
   {
+    "login": "dovas-net",
+    "id": 146240431,
+    "node_id": "U_kgDOCLdzrw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/146240431?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dovas-net",
+    "html_url": "https://github.com/dovas-net",
+    "followers_url": "https://api.github.com/users/dovas-net/followers",
+    "following_url": "https://api.github.com/users/dovas-net/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dovas-net/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dovas-net/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dovas-net/subscriptions",
+    "organizations_url": "https://api.github.com/users/dovas-net/orgs",
+    "repos_url": "https://api.github.com/users/dovas-net/repos",
+    "events_url": "https://api.github.com/users/dovas-net/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dovas-net/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  {
     "login": "seniorvuejsdeveloper",
     "id": 147451557,
     "node_id": "U_kgDOCMnupQ",
