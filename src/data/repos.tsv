@@ -176,6 +176,7 @@ deno-url-object	https://github.com/modster/deno-url-object	0	TypeScript
 deno-vite-react	https://github.com/modster/deno-vite-react	0	CSS	
 denodeploy-skeleton	https://github.com/modster/denodeploy-skeleton	0	JavaScript	
 deno_deferred	https://github.com/modster/deno_deferred	0	N/A	simple deferred for deno
+devices.esphome.io	https://github.com/modster/devices.esphome.io	0	N/A	ESPHome Device Configurations Repository - A database of user submitted configurations for a variety of devices which can be flashed to run ESPHome.io firmware.
 devil-child	https://github.com/modster/devil-child	0	HTML	
 diep-bot	https://github.com/modster/diep-bot	0	JavaScript	A diep.io bot made in node.js
 diep-clone	https://github.com/modster/diep-clone	0	JavaScript	diep.io clone
