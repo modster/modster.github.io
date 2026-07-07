@@ -226,6 +226,7 @@ fiber-gltf-loader	https://github.com/modster/fiber-gltf-loader	0	JavaScript	Crea
 fig-autocomplete	https://github.com/modster/fig-autocomplete	0	N/A	IDE-style autocomplete for your existing terminal & shell
 fixi	https://github.com/modster/fixi	0	N/A	
 flareact-template	https://github.com/modster/flareact-template	0	N/A	Template for Flareact projects
+FlashLite	https://github.com/modster/FlashLite	0	C++	Anj Esp32 Arduino IDE project that uses a joystick to control the color of an rgb led or ws2812b led.
 flask-nextjs-demo	https://github.com/modster/flask-nextjs-demo	0	Python	
 flat	https://github.com/modster/flat	0	N/A	hello world for flat data 
 flat-data	https://github.com/modster/flat-data	0	N/A	
