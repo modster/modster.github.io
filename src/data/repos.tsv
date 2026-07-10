@@ -357,7 +357,7 @@ LeoBot	https://github.com/modster/LeoBot	3	JavaScript	Use TradingView charts to 
 leobot-electron	https://github.com/modster/leobot-electron	0	JavaScript	LeoBot uses TradingView Alerts to send trade signals to an Azure Functions instance, which then authenticates with the Binance API and places orders on the spot and futures markets using data passed from your chart on TradingView.com.
 leva-fork	https://github.com/modster/leva-fork	0	N/A	🌋 React-first components GUI
 lightweight-charts	https://github.com/modster/lightweight-charts	0	N/A	Financial lightweight charts built with HTML5 canvas
-lilBot	https://github.com/modster/lilBot	31	JavaScript	LilBot:  *  The simplest little crypto bot ever. Tradingview Webhooks Node JS
+lilBot	https://github.com/modster/lilBot	32	JavaScript	LilBot:  *  The simplest little crypto bot ever. Tradingview Webhooks Node JS
 lit-html-template	https://github.com/modster/lit-html-template	0	JavaScript	lit-html-template
 Livebook	https://github.com/modster/Livebook	0	Dockerfile	
 llama-index-typescript	https://github.com/modster/llama-index-typescript	1	TypeScript	Created with StackBlitz ⚡️
