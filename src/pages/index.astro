@@ -1,0 +1,255 @@
+---
+const profile = {
+  name: "Eric Greeff",
+  bio: "Android engineer / Kotlin tinkerer / Trading bot enthusiast",
+  avatar: "https://avatars.githubusercontent.com/u/893946?v=4",
+  location: "Petrolia, Ontario",
+  company: "@DataDrivenSoftware",
+  blog: "datadash.cloud",
+  twitter: "goodgreeff",
+  github: "modster",
+  followers: 98,
+  following: 249,
+  publicRepos: 861,
+  publicGists: 134,
+  joined: "2011-07-04",
+};
+
+const repos = [
+  { name: "modster.github.io", description: "The profile of Calgary programmer Eric Michael Greeff.", language: "HTML", stars: 1, forks: 0, updated: "2026-08-08", url: "https://github.com/modster/modster.github.io" },
+  { name: "pp-clone", description: "Kotlin clone project", language: "Kotlin", stars: 0, forks: 0, updated: "2026-08-07", url: "https://github.com/modster/pp-clone" },
+  { name: "CameraX-vulkan", description: "Study feasibility of using Vulkan to simulate long exposure in an Android camera app", language: "HTML", stars: 0, forks: 0, updated: "2026-07-31", url: "https://github.com/modster/CameraX-vulkan" },
+  { name: "scalping-strategy", description: "Buy the dips, take occasional profits, keep a trailing stop. Donchian channels, Bollinger Bands, and EMAs.", language: "Pine Script", stars: 5, forks: 0, updated: "2026-08-04", url: "https://github.com/modster/scalping-strategy" },
+  { name: "modster", description: "My GitHub profile repo", language: "JavaScript", stars: 1, forks: 0, updated: "2026-08-06", url: "https://github.com/modster/modster" },
+  { name: "camera-samples", description: "Multiple samples showing best practices in camera APIs on Android.", language: "Kotlin", stars: 0, forks: 0, updated: "2026-08-05", url: "https://github.com/modster/camera-samples" },
+];
+
+const yearCount = new Date().getFullYear() - new Date(profile.joined).getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{profile.name}</title>
+  <link rel="icon" href={profile.avatar} type="image/png" sizes="32x32" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img src={profile.avatar} alt={profile.name} class="avatar" />
+      <h1>{profile.name}</h1>
+      <p class="tagline">{profile.bio}</p>
+      <p class="location">{profile.location} &middot; {profile.company}</p>
+      <nav class="links">
+        <a href={`https://github.com/${profile.github}`}>GitHub &nearr;</a>
+        <a href={`https://twitter.com/${profile.twitter}`}>Twitter &nearr;</a>
+        <a href="https://greeffer.com">greeffer.com &nearr;</a>
+      </nav>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><span class="num">{profile.publicRepos}</span><span class="label">Repos</span></div>
+      <div class="stat"><span class="num">{profile.followers}</span><span class="label">Followers</span></div>
+      <div class="stat"><span class="num">{profile.publicGists}</span><span class="label">Gists</span></div>
+      <div class="stat"><span class="num">{yearCount}</span><span class="label">Years on GitHub</span></div>
+    </section>
+
+    <section class="repos">
+      <h2>Recent repositories</h2>
+      <div class="grid">
+        {repos.map(r => (
+          <a href={r.url} class="card">
+            <div class="card-head">
+              <strong>{r.name}</strong>
+              {r.language && <span class="lang">{r.language}</span>}
+            </div>
+            <p>{r.description}</p>
+            <div class="card-meta">
+              <span>&starf; {r.stars}</span>
+              <span>&fork; {r.forks}</span>
+              <span>Updated {r.updated}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <footer>
+      Built with <a href="https://astro.build">Astro</a> &middot; &copy; {new Date().getFullYear()} {profile.name}
+    </footer>
+  </main>
+</body>
+</html>
+
+<style>
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --accent: #58a6ff;
+    --card-bg: #161b22;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 3rem 0 2rem;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: .25rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    color: var(--muted);
+  }
+
+  .location {
+    font-size: .9rem;
+    color: var(--muted);
+    margin-top: .25rem;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: .95rem;
+  }
+
+  .links a:hover { text-decoration: underline; }
+
+  /* Stats */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 2rem 0 3rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat .num {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .stat .label {
+    font-size: .85rem;
+    color: var(--muted);
+  }
+
+  /* Repos */
+  .repos h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--fg);
+    transition: border-color .15s;
+  }
+
+  .card:hover { border-color: var(--accent); }
+
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lang {
+    font-size: .75rem;
+    padding: .15rem .5rem;
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--muted);
+  }
+
+  .card p {
+    font-size: .9rem;
+    color: var(--muted);
+    flex: 1;
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: .8rem;
+    color: var(--muted);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: .85rem;
+    color: var(--muted);
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2rem; }
+  }
+</style>
